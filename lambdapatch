@@ -38,3 +38,44 @@ for reservation in linux_patch_response['Reservations']:
 
 # print the list of instance ids
 print(ec2_ids)
+
+
+######################################
+
+import boto3
+client = boto3.client('ec2')
+clientssm = boto3.client('ssm')
+custom_filter = [{
+    'Name':'tag:Patch Groups', 
+    'Values': ['AWS-Linux2-01']}]
+    
+#list ec2 with specific tag    
+linux_patch_response = client.describe_instances(Filters=custom_filter)
+
+# initialize an empty list to store instance ids
+ec2_ids = []
+
+# iterate through reservations and instances to extract instance ids
+for reservation in linux_patch_response['Reservations']:
+    for instance in reservation['Instances']:
+        instance_id = instance['InstanceId']
+        ec2_ids.append(instance_id)
+
+# print the list of instance ids
+print(ec2_ids)
+
+
+print(linux_patch_response)
+
+response = clientssm.start_automation_execution(
+    DocumentName='Copy-AWS-PatchInstanceWithRollback',
+    #DocumentVersion='9',
+    Parameters={
+        'InstanceId': [
+            ec2_ids
+        ],
+        'ReportS3Bucket': [
+            'test-yusuf'
+        ]
+    }
+)
