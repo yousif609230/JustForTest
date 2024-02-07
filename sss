@@ -1,34 +1,20 @@
-/update-lambda-ekyc - POST method test results
-Request
-/update-lambda-ekyc
-Latency
-565
-Status
-200
-Response body
-{"errorMessage": "'Headers'", "errorType": "KeyError", "requestId": "1a21a820-32e2-4406-b7b1-519b27fd0f6a", "stackTrace": ["  File \"/var/task/lambda_function.py\", line 27, in lambda_handler\n    lambda_function_name = event['Headers']['function_name']\n"]}
-Response headers
-{
-  "Content-Type": "application/json",
-  "X-Amzn-Trace-Id": "Root=1-65c3b5fb-7027aafa9578d0c2db5e7b4e;Parent=07a1494014c585f6;Sampled=0;lineage=3e93d20c:0"
-}
-Log
-Execution log for request 0e8b9a62-06f5-479f-943b-d042c75809a5
-Wed Feb 07 16:55:23 UTC 2024 : Starting execution for request: 0e8b9a62-06f5-479f-943b-d042c75809a5
-Wed Feb 07 16:55:23 UTC 2024 : HTTP Method: POST, Resource Path: /update-lambda-ekyc
-Wed Feb 07 16:55:23 UTC 2024 : Method request path: {}
-Wed Feb 07 16:55:23 UTC 2024 : Method request query string: {}
-Wed Feb 07 16:55:23 UTC 2024 : Method request headers: {function_name=yusuf-test}
-Wed Feb 07 16:55:23 UTC 2024 : Method request body before transformations: 
-Wed Feb 07 16:55:23 UTC 2024 : Request validation succeeded for content type application/json
-Wed Feb 07 16:55:23 UTC 2024 : Endpoint request URI: https://lambda.eu-west-1.amazonaws.com/2015-03-31/functions/arn:aws:lambda:eu-west-1:132405888043:function:update-ekyc-fnc/invocations
-Wed Feb 07 16:55:23 UTC 2024 : Endpoint request headers: {x-amzn-lambda-integration-tag=0e8b9a62-06f5-479f-943b-d042c75809a5, Authorization=***********************************************************************************************************************************************************************************************************************************************************************************************************1f2403, X-Amz-Date=20240207T165523Z, x-amzn-apigateway-api-id=jtjulvsl1d, X-Amz-Source-Arn=arn:aws:execute-api:eu-west-1:132405888043:jtjulvsl1d/test-invoke-stage/POST/update-lambda-ekyc, Accept=application/json, User-Agent=AmazonAPIGateway_jtjulvsl1d, X-Amz-Security-Token=IQoJb3JpZ2luX2VjEBAaCWV1LXdlc3QtMSJHMEUCIFvZrwPlVZXAWt65GrGIzVu62fyR829ibj5XEBheyEtEAiEA8YOGUOzGT7iHQgq8oQYcf8vGr4oC1NqjcmnBNBtYFi0qugUI2f//////////ARACGgw2MzExNDQwMDIwOTkiDCukhSrgzRqRA98DMSqOBc7yolZ36gNWxf4Wkcqe/d0RS15KYjK9w4TUYF0cPbodU5XElGqWfE3ssKV5cz4iEOg4RjX5FKAoVTNMBoA7hgqw4U1AUGBDHroSGYH0OU7jrDHbyDTQlVJ44Fd0bdXrKgRxYEMdCdNkh+nhxH3+3h [TRUNCATED]
-Wed Feb 07 16:55:23 UTC 2024 : Endpoint request body after transformations: 
-Wed Feb 07 16:55:23 UTC 2024 : Sending request to https://lambda.eu-west-1.amazonaws.com/2015-03-31/functions/arn:aws:lambda:eu-west-1:132405888043:function:update-ekyc-fnc/invocations
-Wed Feb 07 16:55:24 UTC 2024 : Received response. Status: 200, Integration latency: 560 ms
-Wed Feb 07 16:55:24 UTC 2024 : Endpoint response headers: {Date=Wed, 07 Feb 2024 16:55:24 GMT, Content-Type=application/json, Content-Length=258, Connection=keep-alive, x-amzn-RequestId=1a21a820-32e2-4406-b7b1-519b27fd0f6a, X-Amz-Function-Error=Unhandled, x-amzn-Remapped-Content-Length=0, X-Amz-Executed-Version=$LATEST, X-Amzn-Trace-Id=root=1-65c3b5fb-7027aafa9578d0c2db5e7b4e;parent=07a1494014c585f6;sampled=0;lineage=3e93d20c:0}
-Wed Feb 07 16:55:24 UTC 2024 : Endpoint response body before transformations: {"errorMessage": "'Headers'", "errorType": "KeyError", "requestId": "1a21a820-32e2-4406-b7b1-519b27fd0f6a", "stackTrace": ["  File \"/var/task/lambda_function.py\", line 27, in lambda_handler\n    lambda_function_name = event['Headers']['function_name']\n"]}
-Wed Feb 07 16:55:24 UTC 2024 : Method response body after transformations: {"errorMessage": "'Headers'", "errorType": "KeyError", "requestId": "1a21a820-32e2-4406-b7b1-519b27fd0f6a", "stackTrace": ["  File \"/var/task/lambda_function.py\", line 27, in lambda_handler\n    lambda_function_name = event['Headers']['function_name']\n"]}
-Wed Feb 07 16:55:24 UTC 2024 : Method response headers: {X-Amzn-Trace-Id=Root=1-65c3b5fb-7027aafa9578d0c2db5e7b4e;Parent=07a1494014c585f6;Sampled=0;lineage=3e93d20c:0, Content-Type=application/json}
-Wed Feb 07 16:55:24 UTC 2024 : Successfully completed execution
-Wed Feb 07 16:55:24 UTC 2024 : Method completed with status: 200
+def lambda_handler(event, context):
+    try:
+        # Extract lambda_function_name from headers
+        lambda_function_name = event['headers']['function_name']
+    except KeyError:
+        return {
+            'statusCode': 400,
+            'body': "Missing 'function_name' header in the request."
+        }
+
+    environment_variables = {
+        'Variable1': 'Value1',
+        'Variable2': 'Value2'
+    }
+
+    response = update_lambda_environment(lambda_function_name, environment_variables)
+    return {
+        'statusCode': 200,
+        'body': response
+    }
