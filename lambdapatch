@@ -1,129 +1,4 @@
 import boto3
-client = boto3.client('ec2')
-clientssm = boto3.client('ssm')
-custom_filter = [{
-    'Name':'tag:Patch Groups', 
-    'Values': ['AWS-Linux2-01']}]
-    
-#list ec2 with specific tag    
-linux_patch_response = client.describe_instances(Filters=custom_filter)
-
-#save instance id in variable 
-ec2_id= linux_patch_response['Reservations'][1]['Instances'][0]['InstanceId']
-
-
-
-print(ec2_id)
-
-#############################################
-
-import boto3
-
-client = boto3.client('ec2')
-clientssm = boto3.client('ssm')
-
-custom_filter = [{'Name':'tag:Patch Groups', 'Values': ['AWS-Linux2-01']}]
-
-# list ec2 with specific tag
-linux_patch_response = client.describe_instances(Filters=custom_filter)
-
-# initialize an empty list to store instance ids
-ec2_ids = []
-
-# iterate through reservations and instances to extract instance ids
-for reservation in linux_patch_response['Reservations']:
-    for instance in reservation['Instances']:
-        instance_id = instance['InstanceId']
-        ec2_ids.append(instance_id)
-
-# print the list of instance ids
-print(ec2_ids)
-
-
-######################################
-
-import boto3
-client = boto3.client('ec2')
-clientssm = boto3.client('ssm')
-custom_filter = [{
-    'Name':'tag:Patch Groups', 
-    'Values': ['AWS-Linux2-01']}]
-    
-#list ec2 with specific tag    
-linux_patch_response = client.describe_instances(Filters=custom_filter)
-
-# initialize an empty list to store instance ids
-ec2_ids = []
-
-# iterate through reservations and instances to extract instance ids
-for reservation in linux_patch_response['Reservations']:
-    for instance in reservation['Instances']:
-        instance_id = instance['InstanceId']
-        ec2_ids.append(instance_id)
-
-# print the list of instance ids
-print(ec2_ids)
-
-
-print(linux_patch_response)
-
-response = clientssm.start_automation_execution(
-    DocumentName='Copy-AWS-PatchInstanceWithRollback',
-    #DocumentVersion='9',
-    Parameters={
-        'InstanceId': [
-            ec2_ids
-        ],
-        'ReportS3Bucket': [
-            'test-yusuf'
-        ]
-    }
-)
-
-###############################
-
-
-
-import boto3
-
-client = boto3.client('ec2')
-clientssm = boto3.client('ssm')
-
-custom_filter = [{'Name':'tag:Patch Groups', 'Values': ['AWS-Linux2-01']}]
-
-# list ec2 with specific tag
-linux_patch_response = client.describe_instances(Filters=custom_filter)
-
-# initialize an empty list to store instance ids
-ec2_ids = []
-
-# iterate through reservations and instances to extract instance ids
-for reservation in linux_patch_response['Reservations']:
-    for instance in reservation['Instances']:
-        instance_id = instance['InstanceId']
-        ec2_ids.append(instance_id)
-
-# print the list of instance ids
-print(ec2_ids)
-
-# loop through each instance and start automation execution
-for instance_id in ec2_ids:
-    response = clientssm.start_automation_execution(
-        DocumentName='Copy-AWS-PatchInstanceWithRollback',
-        # DocumentVersion='9',
-        Parameters={
-            'InstanceId': [instance_id],
-            'ReportS3Bucket': ['test-yusuf']
-        }
-    )
-
-    # print the response for each instance
-    print(f"Automation execution started for instance {instance_id}: {response}")
-
-
-
-
-import boto3
 
 def update_lambda_environment(lambda_function_name, environment_variables):
     # Create Lambda client
@@ -144,14 +19,18 @@ def update_lambda_environment(lambda_function_name, environment_variables):
         }
     )
 
-    print("Environment variables updated successfully.")
+    return "Environment variables updated successfully."
 
-# Example usage
-lambda_function_name = 'YourLambdaFunctionName'
-environment_variables = {
-    'Variable1': 'Value1',
-    'Variable2': 'Value2'
-}
+def lambda_handler(event, context):
+    # Example usage
+    lambda_function_name = 'YourLambdaFunctionName'
+    environment_variables = {
+        'Variable1': 'Value1',
+        'Variable2': 'Value2'
+    }
 
-update_lambda_environment(lambda_function_name, environment_variables)
-
+    response = update_lambda_environment(lambda_function_name, environment_variables)
+    return {
+        'statusCode': 200,
+        'body': response
+    }
