@@ -1,0 +1,34 @@
+/update-lambda-ekyc - POST method test results
+Request
+/update-lambda-ekyc?function_name=yusuf-test
+Latency
+552
+Status
+200
+Response body
+{"errorMessage": "'queryStringParameters'", "errorType": "KeyError", "requestId": "642be913-0fa0-4294-8a28-7dc691ecdeb4", "stackTrace": ["  File \"/var/task/lambda_function.py\", line 27, in lambda_handler\n    lambda_function_name = event['queryStringParameters']['function_name']\n"]}
+Response headers
+{
+  "Content-Type": "application/json",
+  "X-Amzn-Trace-Id": "Root=1-65c3b174-4573ccbba5cb77f936083564;Parent=11e2904bd59b161c;Sampled=0;lineage=3e93d20c:0"
+}
+Log
+Execution log for request 57fa42be-b071-4d2f-af0b-2bef78e08147
+Wed Feb 07 16:36:04 UTC 2024 : Starting execution for request: 57fa42be-b071-4d2f-af0b-2bef78e08147
+Wed Feb 07 16:36:04 UTC 2024 : HTTP Method: POST, Resource Path: /update-lambda-ekyc
+Wed Feb 07 16:36:04 UTC 2024 : Method request path: {}
+Wed Feb 07 16:36:04 UTC 2024 : Method request query string: {function_name=yusuf-test}
+Wed Feb 07 16:36:04 UTC 2024 : Method request headers: {}
+Wed Feb 07 16:36:04 UTC 2024 : Method request body before transformations: 
+Wed Feb 07 16:36:04 UTC 2024 : Request validation succeeded for content type application/json
+Wed Feb 07 16:36:04 UTC 2024 : Endpoint request URI: https://lambda.eu-west-1.amazonaws.com/2015-03-31/functions/arn:aws:lambda:eu-west-1:132405888043:function:update-ekyc-fnc/invocations
+Wed Feb 07 16:36:04 UTC 2024 : Endpoint request headers: {x-amzn-lambda-integration-tag=57fa42be-b071-4d2f-af0b-2bef78e08147, Authorization=***********************************************************************************************************************************************************************************************************************************************************************************************************859441, X-Amz-Date=20240207T163604Z, x-amzn-apigateway-api-id=jtjulvsl1d, X-Amz-Source-Arn=arn:aws:execute-api:eu-west-1:132405888043:jtjulvsl1d/test-invoke-stage/POST/update-lambda-ekyc, Accept=application/json, User-Agent=AmazonAPIGateway_jtjulvsl1d, X-Amz-Security-Token=IQoJb3JpZ2luX2VjEBAaCWV1LXdlc3QtMSJIMEYCIQDm4x8v7iOIQTHQLld5YUIKIttRCa8bbfvqEV5oRmMddwIhANtUITk9RHudJrl+gpTNvXcMUxYfhATcpt4ACXYLNDZ2KrkFCNn//////////wEQAhoMNjMxMTQ0MDAyMDk5Igyz0dnPxhTu8cjHzLoqjQWMWoJfcUPgEyXcESXdsjMI9BfxoQxyaiX5mI3oCUCOh/w/S6nZoWEbhrY9uoWgQI0rmcqtR51nSBTqIBwKYybpA8Vx5bEyQ8814ImMWM0udzEPgzXoW8OtY2a9AC4Yf5zt9NAO9vu9vC0FL+7aHZ [TRUNCATED]
+Wed Feb 07 16:36:04 UTC 2024 : Endpoint request body after transformations: 
+Wed Feb 07 16:36:04 UTC 2024 : Sending request to https://lambda.eu-west-1.amazonaws.com/2015-03-31/functions/arn:aws:lambda:eu-west-1:132405888043:function:update-ekyc-fnc/invocations
+Wed Feb 07 16:36:04 UTC 2024 : Received response. Status: 200, Integration latency: 549 ms
+Wed Feb 07 16:36:04 UTC 2024 : Endpoint response headers: {Date=Wed, 07 Feb 2024 16:36:04 GMT, Content-Type=application/json, Content-Length=286, Connection=keep-alive, x-amzn-RequestId=642be913-0fa0-4294-8a28-7dc691ecdeb4, X-Amz-Function-Error=Unhandled, x-amzn-Remapped-Content-Length=0, X-Amz-Executed-Version=$LATEST, X-Amzn-Trace-Id=root=1-65c3b174-4573ccbba5cb77f936083564;parent=11e2904bd59b161c;sampled=0;lineage=3e93d20c:0}
+Wed Feb 07 16:36:04 UTC 2024 : Endpoint response body before transformations: {"errorMessage": "'queryStringParameters'", "errorType": "KeyError", "requestId": "642be913-0fa0-4294-8a28-7dc691ecdeb4", "stackTrace": ["  File \"/var/task/lambda_function.py\", line 27, in lambda_handler\n    lambda_function_name = event['queryStringParameters']['function_name']\n"]}
+Wed Feb 07 16:36:04 UTC 2024 : Method response body after transformations: {"errorMessage": "'queryStringParameters'", "errorType": "KeyError", "requestId": "642be913-0fa0-4294-8a28-7dc691ecdeb4", "stackTrace": ["  File \"/var/task/lambda_function.py\", line 27, in lambda_handler\n    lambda_function_name = event['queryStringParameters']['function_name']\n"]}
+Wed Feb 07 16:36:04 UTC 2024 : Method response headers: {X-Amzn-Trace-Id=Root=1-65c3b174-4573ccbba5cb77f936083564;Parent=11e2904bd59b161c;Sampled=0;lineage=3e93d20c:0, Content-Type=application/json}
+Wed Feb 07 16:36:04 UTC 2024 : Successfully completed execution
+Wed Feb 07 16:36:04 UTC 2024 : Method completed with status: 200
