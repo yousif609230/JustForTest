@@ -1,20 +1,2 @@
-def lambda_handler(event, context):
-    try:
-        # Extract lambda_function_name from headers
-        lambda_function_name = event['headers']['function_name']
-    except KeyError:
-        return {
-            'statusCode': 400,
-            'body': "Missing 'function_name' header in the request."
-        }
-
-    environment_variables = {
-        'Variable1': 'Value1',
-        'Variable2': 'Value2'
-    }
-
-    response = update_lambda_environment(lambda_function_name, environment_variables)
-    return {
-        'statusCode': 200,
-        'body': response
-    }
+EKYC_FETCH_WATHIQ_DATA_MOCK_URL
+run.mocky.io/v3/bc55ba4a-fbe2-4035-847b-5bfab73ef5b0
