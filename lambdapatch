@@ -1,3 +1,7 @@
+https://jtjulvsl1d.execute-api.eu-west-1.amazonaws.com/dev/update-lambda-ekyc
+
+
+
 import boto3
 
 def update_lambda_environment(lambda_function_name, environment_variables):
