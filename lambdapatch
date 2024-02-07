@@ -1,5 +1,12 @@
 https://jtjulvsl1d.execute-api.eu-west-1.amazonaws.com/dev/update-lambda-ekyc
 
+callback :  https://lambda-ekyc.com/callback
+oath url : https://lambda-ekyc.auth.eu-west-1.amazoncognito.com
+
+Auth URL’s will be: https://{your-cognito-domain}.auth.{your-region}.amazoncognito.com/oauth2/authorize and https://{your-cognito-domain}.auth.{your-region}.amazoncognito.com/oauth2/token . Then in there, look for Cognito domain. The Client ID can be found by scrolling down in the App integration page to App client and analytics section. The ID will be listed next to your App client name.
+
+client ID 74ti4fmj31t25784amia541u9i
+client secrret  j9ggqlcg6h7nkq9ru7ldbsp7k4rlppmcja5mk2h7phbsmbk7f6i
 
 
 import boto3
