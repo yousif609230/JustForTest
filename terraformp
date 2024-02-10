@@ -1,0 +1,111 @@
+module "route1" {
+  source = "./module"
+  route_table_id = aws_route_table.myrt.id
+  gateway_target = local.route.gateway
+  nat_target = local.route.nat_gateway
+  local_target = local.route.local_target
+  network_interface_target = local.route.network_interface_target
+  peering_target = local.route.peering_target
+  transit_gateway_target = local.route.transit_gateway_target
+  vpc_endpoint_target = local.route.vpc_endpoint_target
+
+}
+######################################
+file 2
+
+
+
+variable "create_gateway_routes" {
+  default = true
+}
+variable "create_nat_routes" {
+  default = true
+}
+
+variable "create_local_routes" {
+  default = true
+}
+
+variable "create_network_interface" {
+  default = true
+}
+
+variable "create_vpc_endpoint" {
+  default = true
+}
+
+variable "create_transit_gateway" {
+  default = true
+}
+
+variable "route_table_id" {}
+variable "gateway_target" {}
+# variable "peering_target" {
+# }
+variable "nat_target" {}
+variable "local_target" {}
+variable "network_interface_target" {}
+variable "transit_gateway_target" {}
+variable "vpc_endpoint_target" {}
+
+
+########################################
+
+file 3
+
+
+resource "aws_route" "aws_route_gateway" {
+  route_table_id         = var.route_table_id
+  for_each               = var.create_gateway_routes ? var.gateway_target : {}
+  destination_cidr_block = each.key
+  gateway_id             = each.value
+  
+}
+
+resource "aws_route" "aws_route_nat" {
+  route_table_id         = var.route_table_id
+  for_each               = var.create_nat_routes ? var.nat_target : {}
+  destination_cidr_block = each.key
+  nat_gateway_id         = each.value
+}
+
+resource "aws_route" "aws_route_local" {
+  route_table_id         = var.route_table_id
+  for_each               = var.create_local_routes ? var.local_target : {}
+  destination_cidr_block = each.key
+  local_gateway_id = each.value
+}
+
+resource "aws_route" "aws_route_network_interface" {
+  route_table_id         = var.route_table_id
+  for_each               = var.create_network_interface ? var.network_interface_target : {}
+  destination_cidr_block = each.key
+  network_interface_id = each.value
+}
+
+resource "aws_route" "aws_route_transit_gateway" {
+  route_table_id         = var.route_table_id
+  for_each               = var.create_transit_gateway ? var.transit_gateway_target : {}
+  destination_cidr_block = each.key
+  transit_gateway_id =  each.value
+}
+
+resource "aws_route" "aws_route_vpc_endpoint" {
+  route_table_id         = var.route_table_id
+  for_each               = var.create_vpc_endpoint ? var.vpc_endpoint_target : {}
+  destination_cidr_block = each.key
+  vpc_endpoint_id =  each.value
+}
+
+
+
+resource "aws_route" "aws_route_vpc_peering_connection" {
+  route_table_id            = var.route_table_id
+  for_each                  = var.create_vpc_peering_connection ? var.peering_target : {}
+  destination_cidr_block    = each.key
+  vpc_peering_connection_id = each.value
+}
+
+
+############################################
+
