@@ -1,0 +1,23 @@
+import os
+
+# Authorized Lambda Functions
+AUTHORIZED_LAMBDAS = os.environ.get('AUTHORIZED_LAMBDAS', '').split(',')
+
+def lambda_handler(event, context):
+    print(event)
+    # Example usage
+    lambda_function_name = event['function_name']
+    environment_variables = event['env']
+
+    # Check if the provided lambda function name is authorized
+    if lambda_function_name not in AUTHORIZED_LAMBDAS:
+        return {
+            'statusCode': 403,
+            'body': f"Lambda function '{lambda_function_name}' is not authorized for updates."
+        }
+
+    response = update_lambda_environment(lambda_function_name, environment_variables)
+    return {
+        'statusCode': 200,
+        'body': response
+    }
