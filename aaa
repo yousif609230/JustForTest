@@ -1,47 +1,46 @@
 import boto3
-import json
 import os
+import logging
 
-AUTHORIZED_LAMBDAS = os.environ.get('AUTHORIZED_LAMBDAS', '').split(',')
+AUTHORIZED_LAMBDAS = [x.strip() for x in os.environ.get('AUTHORIZED_LAMBDAS', '').split(',')]
+
+logger = logging.getLogger()
+logger.setLevel(logging.INFO)
 
 def update_lambda_environment(lambda_function_name, environment_variables):
-    # Create Lambda client
-    lambda_client = boto3.client('lambda')
-
-    # Get current configuration
     try:
+        lambda_client = boto3.client('lambda')
         response = lambda_client.get_function_configuration(FunctionName=lambda_function_name)
         current_environment_variables = response['Environment']['Variables']
 
-    except:
+        current_environment_variables.update(environment_variables)
+
+        lambda_client.update_function_configuration(
+            FunctionName=lambda_function_name,
+            Environment={'Variables': current_environment_variables}
+        )
+
+        return "Environment variables updated successfully"
+
+    except boto3.exceptions.Boto3Error as e:
+        logger.error(f"Failed to update environment variables: {e}")
         return {
-           'statusCode': 404,
-           'body': "function could not be found"
+            'statusCode': 500,
+            'body': "Internal Server Error"
         }
-    
-    # Update environment variables
-    current_environment_variables.update(environment_variables)
-
-    # Update Lambda function configuration
-    response = lambda_client.update_function_configuration(
-        FunctionName=lambda_function_name,
-        Environment={
-            'Variables': current_environment_variables
-        }
-    )
-
-    return "Environment variables updated successfully"
 
 def lambda_handler(event, context):
-    print(event)
-    #Example usage
-    lambda_function_name = event['function_name']
-    environment_variables = event['env'] #{
-#        'test': 'no124',
-#    }
+    logger.info(f"Received event: {event}")
 
+    lambda_function_name = event.get('function_name')
+    environment_variables = event.get('env', {})
 
-    # Check if the provided lambda function name is authorized
+    if not lambda_function_name:
+        return {
+            'statusCode': 400,
+            'body': "Bad Request: Missing 'function_name' in the request"
+        }
+
     if lambda_function_name not in AUTHORIZED_LAMBDAS:
         return {
             'statusCode': 403,
@@ -50,7 +49,11 @@ def lambda_handler(event, context):
         }
 
     response = update_lambda_environment(lambda_function_name, environment_variables)
-    return {
-        'statusCode': 200,
-        'body': response
-    }
+    
+    if isinstance(response, str):
+        return {
+            'statusCode': 200,
+            'body': response
+        }
+    else:
+        return response
