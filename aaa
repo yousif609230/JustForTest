@@ -1,19 +1,52 @@
+import boto3
+import json
 import os
 
-# Authorized Lambda Functions
 AUTHORIZED_LAMBDAS = os.environ.get('AUTHORIZED_LAMBDAS', '').split(',')
+
+def update_lambda_environment(lambda_function_name, environment_variables):
+    # Create Lambda client
+    lambda_client = boto3.client('lambda')
+
+    # Get current configuration
+    try:
+        response = lambda_client.get_function_configuration(FunctionName=lambda_function_name)
+        current_environment_variables = response['Environment']['Variables']
+
+    except:
+        return {
+           'statusCode': 404,
+           'body': "function could not be found"
+        }
+    
+    # Update environment variables
+    current_environment_variables.update(environment_variables)
+
+    # Update Lambda function configuration
+    response = lambda_client.update_function_configuration(
+        FunctionName=lambda_function_name,
+        Environment={
+            'Variables': current_environment_variables
+        }
+    )
+
+    return "Environment variables updated successfully"
 
 def lambda_handler(event, context):
     print(event)
-    # Example usage
+    #Example usage
     lambda_function_name = event['function_name']
-    environment_variables = event['env']
+    environment_variables = event['env'] #{
+#        'test': 'no124',
+#    }
+
 
     # Check if the provided lambda function name is authorized
     if lambda_function_name not in AUTHORIZED_LAMBDAS:
         return {
             'statusCode': 403,
-            'body': f"Lambda function '{lambda_function_name}' is not authorized for updates."
+            'body': f"Lambda function '{lambda_function_name}' is not authorized for updates.",
+            'Authorized_functions': f"only these functions are authorized '{AUTHORIZED_LAMBDAS}'"
         }
 
     response = update_lambda_environment(lambda_function_name, environment_variables)
