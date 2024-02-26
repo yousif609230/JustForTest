@@ -59,3 +59,72 @@ for reservation in linux_patch_response['Reservations']:
 
 # Print the dictionary mapping EC2 IDs to their names
 print(ec2_id_name_map)
+
+
+
+
+####################################
+
+
+import boto3
+from botocore.exceptions import ClientError
+
+client = boto3.client('ec2')
+ses_client = boto3.client('ses')
+
+# Define custom filter
+custom_filter = [{'Name':'tag:Patch Groups', 'Values': ['AWS-Linux2-01']}]
+
+# List EC2 instances with the specified tag
+linux_patch_response = client.describe_instances(Filters=custom_filter)
+
+# Initialize an empty dictionary to store instance IDs and their corresponding names
+ec2_id_name_map = {}
+
+# Iterate through reservations and instances to extract instance IDs and their names
+for reservation in linux_patch_response['Reservations']:
+    for instance in reservation['Instances']:
+        instance_id = instance['InstanceId']
+        # Get the 'Name' tag value
+        instance_name = None
+        for tag in instance['Tags']:
+            if tag['Key'] == 'Name':
+                instance_name = tag['Value']
+                break
+        # Map instance ID to its name
+        if instance_name:
+            ec2_id_name_map[instance_id] = instance_name
+
+# Create HTML table for the EC2 IDs and Names
+html_table = "<table border='1'><tr><th>Instance ID</th><th>Name</th></tr>"
+for instance_id, instance_name in ec2_id_name_map.items():
+    html_table += f"<tr><td>{instance_id}</td><td>{instance_name}</td></tr>"
+html_table += "</table>"
+
+# Email subject and body
+subject = "EC2 Instance IDs and Names"
+body_html = f"<h1>EC2 Instance IDs and Names</h1>{html_table}"
+
+# Send email
+try:
+    response = ses_client.send_email(
+        Destination={
+            'ToAddresses': ['recipient@example.com'],
+        },
+        Message={
+            'Body': {
+                'Html': {
+                    'Charset': 'UTF-8',
+                    'Data': body_html,
+                },
+            },
+            'Subject': {
+                'Charset': 'UTF-8',
+                'Data': subject,
+            },
+        },
+        Source='sender@example.com',
+    )
+    print("Email sent successfully!")
+except ClientError as e:
+    print(f"Email sending failed. Error message: {e.response['Error']['Message']}")
