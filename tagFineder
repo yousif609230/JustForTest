@@ -23,3 +23,39 @@ print(ec2_ids)
 
 ec2_name = linux_patch_response['Reservations'][0]['Instances'][0]['Tags']
 print(ec2_name)
+
+
+
+
+
+##############################################
+
+import boto3
+
+client = boto3.client('ec2')
+
+# Define custom filter
+custom_filter = [{'Name':'tag:Patch Groups', 'Values': ['AWS-Linux2-01']}]
+
+# List EC2 instances with the specified tag
+linux_patch_response = client.describe_instances(Filters=custom_filter)
+
+# Initialize an empty dictionary to store instance IDs and their corresponding names
+ec2_id_name_map = {}
+
+# Iterate through reservations and instances to extract instance IDs and their names
+for reservation in linux_patch_response['Reservations']:
+    for instance in reservation['Instances']:
+        instance_id = instance['InstanceId']
+        # Get the 'Name' tag value
+        instance_name = None
+        for tag in instance['Tags']:
+            if tag['Key'] == 'Name':
+                instance_name = tag['Value']
+                break
+        # Map instance ID to its name
+        if instance_name:
+            ec2_id_name_map[instance_id] = instance_name
+
+# Print the dictionary mapping EC2 IDs to their names
+print(ec2_id_name_map)
