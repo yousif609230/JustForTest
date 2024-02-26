@@ -13,3 +13,29 @@ for volumes in volumes_finder['Volumes']:
 
 print(vol_ids)
 print(create_date)
+
+
+
+######################
+
+import boto3
+
+client = boto3.client('ec2')
+
+volumes_finder = client.describe_volumes(Filters=[{'Name': 'status','Values': ['available']}]) 
+
+vol_ids = []
+create_date = []
+
+for volumes in volumes_finder['Volumes']:
+    volume_id = volumes['VolumeId']
+    creation_date = volumes['CreateTime']
+    vol_ids.append(volume_id)
+    create_date.append(creation_date)
+
+# Zip vol_ids and create_date lists
+mapped_data = list(zip(vol_ids, create_date))
+
+# Print mapped data
+for volume_id, creation_date in mapped_data:
+    print(f"Volume ID: {volume_id}, Creation Date: {creation_date}")
