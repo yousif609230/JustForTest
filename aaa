@@ -39,3 +39,32 @@ mapped_data = list(zip(vol_ids, create_date))
 # Print mapped data
 for volume_id, creation_date in mapped_data:
     print(f"Volume ID: {volume_id}, Creation Date: {creation_date}")
+
+
+###########################
+
+import boto3
+
+client = boto3.client('ec2')
+
+volumes_finder = client.describe_volumes(Filters=[{'Name': 'status','Values': ['available']}]) 
+
+vol_data = []
+
+for volume in volumes_finder['Volumes']:
+    volume_id = volume['VolumeId']
+    creation_date = volume['CreateTime']
+    
+    # Get the Name tag if available, otherwise set it to 'Unnamed'
+    name_tag = 'Unnamed'
+    for tag in volume.get('Tags', []):
+        if tag['Key'] == 'Name':
+            name_tag = tag['Value']
+            break
+    
+    vol_data.append({'VolumeId': volume_id, 'CreationDate': creation_date, 'NameTag': name_tag})
+
+# Print the data
+for volume_info in vol_data:
+    print(f"Volume ID: {volume_info['VolumeId']}, Creation Date: {volume_info['CreationDate']}, Name Tag: {volume_info['NameTag']}")
+
