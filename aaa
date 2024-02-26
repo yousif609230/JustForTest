@@ -1,59 +1,15 @@
 import boto3
-import os
-import logging
+client = boto3.client('ec2')
 
-AUTHORIZED_LAMBDAS = [x.strip() for x in os.environ.get('AUTHORIZED_LAMBDAS', '').split(',')]
+volumes_finder = client.describe_volumes(Filters=[{'Name': 'status','Values': ['available']}]) 
+vol_ids = []
+create_date = []
 
-logger = logging.getLogger()
-logger.setLevel(logging.INFO)
+for volumes in volumes_finder['Volumes']:
+        volume_ids = volumes['VolumeId']
+        vol_ids.append(volume_ids)
+        creation_date = volumes['CreateTime']
+        create_date.append(creation_date)
 
-def update_lambda_environment(lambda_function_name, environment_variables):
-    try:
-        lambda_client = boto3.client('lambda')
-        response = lambda_client.get_function_configuration(FunctionName=lambda_function_name)
-        current_environment_variables = response['Environment']['Variables']
-
-        current_environment_variables.update(environment_variables)
-
-        lambda_client.update_function_configuration(
-            FunctionName=lambda_function_name,
-            Environment={'Variables': current_environment_variables}
-        )
-
-        return "Environment variables updated successfully"
-
-    except boto3.exceptions.Boto3Error as e:
-        logger.error(f"Failed to update environment variables: {e}")
-        return {
-            'statusCode': 500,
-            'body': "Internal Server Error"
-        }
-
-def lambda_handler(event, context):
-    logger.info(f"Received event: {event}")
-
-    lambda_function_name = event.get('function_name')
-    environment_variables = event.get('env', {})
-
-    if not lambda_function_name:
-        return {
-            'statusCode': 400,
-            'body': "Bad Request: Missing 'function_name' in the request"
-        }
-
-    if lambda_function_name not in AUTHORIZED_LAMBDAS:
-        return {
-            'statusCode': 403,
-            'body': f"Lambda function '{lambda_function_name}' is not authorized for updates.",
-            'Authorized_functions': f"only these functions are authorized '{AUTHORIZED_LAMBDAS}'"
-        }
-
-    response = update_lambda_environment(lambda_function_name, environment_variables)
-    
-    if isinstance(response, str):
-        return {
-            'statusCode': 200,
-            'body': response
-        }
-    else:
-        return response
+print(vol_ids)
+print(create_date)
