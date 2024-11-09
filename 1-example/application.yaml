@@ -1,0 +1,28 @@
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: my-app
+  namespace: argocd
+  annotations:
+   argocd-image-updater.argoproj.io/image-list: yousif101/argocdproj:~v0.1
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/yousif609230/argocd-proj.git
+    targetRevision: main
+    path: environments/staging/my-app
+  destination:
+    server: https://kubernetes.default.svc 
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true 
+      allowEmpty: false 
+    syncOptions:
+      - CreateNamespace=false
+      - PrunePropagationPolicy=foreground
+      - validate=true
+      - pruneLast=true
