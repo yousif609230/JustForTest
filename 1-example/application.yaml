@@ -5,7 +5,7 @@ metadata:
   name: my-app
   namespace: argocd
   finalizers:
-    - resources-finalizer.argocd.argoproj.io
+    - resources-finalizer.argocd.argoproj.io #without adding this it will not delete the pods when the appication is deleted
 spec:
   project: default
   source:
