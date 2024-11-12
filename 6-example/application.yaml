@@ -1,10 +1,12 @@
-#argocd with kustomize
+#argocd with kustomize updater image
 ---
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: my-app-kustomize
+  name: my-app-kustomize-updater
   namespace: argocd
+  annotations:
+    argocd-image-updater.argoproj.io/image-list: yousif101/argocdproj:~v0.1
   finalizers:
     - resources-finalizer.argocd.argoproj.io #without adding this it will not delete the pods when the appication is deleted
 spec:
@@ -13,7 +15,7 @@ spec:
     repoURL: https://github.com/yousif609230/argocd-proj.git
     targetRevision: main
     #path: environments/staging/my-app
-    path: environments/dev/my-app-kustomiz
+    path: environments-img-updater\staging\my-app
   destination:
     server: https://kubernetes.default.svc 
   syncPolicy:
