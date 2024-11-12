@@ -1,3 +1,4 @@
+#argocd with apps of app 
 ---
 apiVersion: argoproj.io/v1alpha1
 kind: Application
