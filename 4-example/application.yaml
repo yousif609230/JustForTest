@@ -10,7 +10,7 @@ spec:
   project: default
   source:
     repoURL: https://kubernetes-sigs.github.io/metrics-server/
-    targetRevision: 13.12.2
+    targetRevision: 3.8.4
     chart: metrics-server
     helm:
       version: v3
