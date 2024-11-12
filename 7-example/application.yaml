@@ -1,4 +1,4 @@
-#argocd with kustomize updater image (NOT RECOMMENDED)
+#argocd with kustomize updater image and write back gitops
 ---
 apiVersion: argoproj.io/v1alpha1
 kind: Application
@@ -7,6 +7,7 @@ metadata:
   namespace: argocd
   annotations:
     argocd-image-updater.argoproj.io/image-list: yousif101/argocdproj:~v0.1
+    argocd-image-updater.argoproj.io/write-back-method: git 
   finalizers:
     - resources-finalizer.argocd.argoproj.io #without adding this it will not delete the pods when the appication is deleted
 spec:
