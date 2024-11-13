@@ -17,6 +17,14 @@ spec:
     targetRevision: main
     #path: environments/staging/my-app
     path: my-app-chart
+    helm:
+      parameters:
+        - name: "replicaCount"
+          value: "2"
+        - name: "image.repository"
+          value: "yousif101/argocdproj" 
+        - name: "image.tag"
+          value: "v0.1.0"
   destination:
     server: https://kubernetes.default.svc 
     namespace: dev
@@ -30,12 +38,5 @@ spec:
       - PrunePropagationPolicy=foreground
       - validate=true
       - pruneLast=true
-helm:
-  parameters:
-    - name: "replicaCount"
-      value: "2"
-    - name: "image.repository"
-      value: "yousif101/argocdproj" 
-    - name: "image.tag"
-      value: "v0.1.0"
+
 
