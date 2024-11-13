@@ -3,7 +3,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: my-app-kustomize-updater
+  name: my-app-helm-updater
   namespace: argocd
   annotations:
     argocd-image-updater.argoproj.io/image-list: yousif101/argocdproj:~v0.4
