@@ -10,7 +10,7 @@ spec:
   source:
     repoURL: https://github.com/yousif609230/argocd-prod.git
     targetRevision: main
-    path: envs/dev
+    path: envs/dev/payments/
     directory:
       recurse: true
   destination:
