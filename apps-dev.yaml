@@ -1,7 +1,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: apps-dev
+  name: app-dev
   namespace: argocd
   finalizers:
     - resources-finalizer.argocd.argoproj.io #without adding this it will not delete the pods when the appication is deleted
