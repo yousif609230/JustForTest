@@ -1,4 +1,4 @@
-#argocd with kustomize updater image and write back gitops
+#argocd with helm
 ---
 apiVersion: argoproj.io/v1alpha1
 kind: Application
