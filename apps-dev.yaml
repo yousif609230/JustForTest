@@ -10,7 +10,7 @@ spec:
   source:
     repoURL: https://github.com/yousif609230/argocd-prod.git
     targetRevision: main
-    path: envs/dev/payments/
+    path: delete-me
     directory:
       recurse: true
   destination:
