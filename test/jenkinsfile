@@ -35,21 +35,24 @@ pipeline {
         stage('Determine VPC and Subnet') {
             steps {
                 script {
-                    // This step will use AWS CLI to find the appropriate VPC and subnet
-                    def findNetworkCommand = """
-                        aws ec2 describe-vpcs --filters "Name=cidr-block,Values=*${params.SOURCE_IP}*" --query 'Vpcs[0].VpcId' --output text
+                    // Find subnet that contains the source IP
+                    def findSubnetCommand = """
+                        aws ec2 describe-subnets \
+                            --query 'Subnets[?contains(CidrBlock, \`${params.SOURCE_IP}\`)].{SubnetId:SubnetId,VpcId:VpcId}' \
+                            --output json
                     """
-                    env.TARGET_VPC = sh(script: findNetworkCommand, returnStdout: true).trim()
+                    def subnetInfo = readJSON text: sh(script: findSubnetCommand, returnStdout: true).trim()
                     
-                    if (env.TARGET_VPC == 'None') {
-                        error "No matching VPC found for source IP"
+                    if (subnetInfo.size() == 0) {
+                        error "No subnet found containing IP ${params.SOURCE_IP}"
                     }
                     
-                    // Find suitable subnet in the VPC
-                    def findSubnetCommand = """
-                        aws ec2 describe-subnets --filters "Name=vpc-id,Values=${env.TARGET_VPC}" --query 'Subnets[0].SubnetId' --output text
-                    """
-                    env.TARGET_SUBNET = sh(script: findSubnetCommand, returnStdout: true).trim()
+                    // Store subnet and VPC IDs
+                    env.TARGET_SUBNET = subnetInfo[0].SubnetId
+                    env.TARGET_VPC = subnetInfo[0].VpcId
+                    
+                    echo "Found Subnet: ${env.TARGET_SUBNET}"
+                    echo "Found VPC: ${env.TARGET_VPC}"
                 }
             }
         }
