@@ -1,268 +1,1038 @@
 [
     {
-        "AlarmName": "AWSResilienceHub-EKSDeploymentHighCpuUtilizationAlarm-2024-01-01_Backbase_060527ba-8fc6-45d6-9355-6a1bc1d6e3ba",
-        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:132405888043:alarm:AWSResilienceHub-EKSDeploymentHighCpuUtilizationAlarm-2024-01-01_Backbase_060527ba-8fc6-45d6-9355-6a1bc1d6e3ba",
-        "AlarmDescription": "An alarm by AWS Resilience Hub that reports when the pod's average CPU utilization for a deployment exceeds 120 percent of the reserved CPU capacity per pod.",
+        "AlarmName": "***CRITICAL*** prod HA-Urbis - UNHEALTHY instances in BhUrbisHaATMapiApiTg TargetGroup",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:***CRITICAL*** prod HA-Urbis - UNHEALTHY instances in BhUrbisHaATMapiApiTg TargetGroup",
+        "AlarmDescription": "Alarms when none healthy instances in prodBhUrbisHaATMapiApiTg",
+        "Namespace": "AWS/ApplicationELB",
+        "StateUpdatedTimestamp": "2024-08-15T23:11:56.735000+00:00"
+    },
+    {
+        "AlarmName": "***CRITICAL*** prod HA-Urbis - UNHEALTHY instances in BhUrbisHaAccountClosureApiTg TargetGroup",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:***CRITICAL*** prod HA-Urbis - UNHEALTHY instances in BhUrbisHaAccountClosureApiTg TargetGroup",
+        "AlarmDescription": "Alarms when none healthy instances in prodBhUrbisHaAccountClosureApiTg",
+        "Namespace": "AWS/ApplicationELB",
+        "StateUpdatedTimestamp": "2024-08-15T23:12:23.413000+00:00"
+    },
+    {
+        "AlarmName": "***CRITICAL*** prod HA-Urbis - UNHEALTHY instances in BhUrbisHaAccountsApiTg TargetGroup",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:***CRITICAL*** prod HA-Urbis - UNHEALTHY instances in BhUrbisHaAccountsApiTg TargetGroup",
+        "AlarmDescription": "Alarms when none healthy instances in prodBhUrbisHaAccountsApiTg",
+        "Namespace": "AWS/ApplicationELB",
+        "StateUpdatedTimestamp": "2024-08-15T23:11:30.260000+00:00"
+    },
+    {
+        "AlarmName": "***CRITICAL*** prod HA-Urbis - UNHEALTHY instances in BhUrbisHaCabacApiTg TargetGroup",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:***CRITICAL*** prod HA-Urbis - UNHEALTHY instances in BhUrbisHaCabacApiTg TargetGroup",
+        "AlarmDescription": "Alarms when none healthy instances in prodBhUrbisHaCabacApiTg",
+        "Namespace": "AWS/ApplicationELB",
+        "StateUpdatedTimestamp": "2024-08-15T23:12:27.887000+00:00"
+    },
+    {
+        "AlarmName": "***CRITICAL*** prod HA-Urbis - UNHEALTHY instances in BhUrbisHaCashwasteApiTg TargetGroup",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:***CRITICAL*** prod HA-Urbis - UNHEALTHY instances in BhUrbisHaCashwasteApiTg TargetGroup",
+        "AlarmDescription": "Alarms when none healthy instances in prodBhUrbisHaCashwasteApiTg",
+        "Namespace": "AWS/ApplicationELB",
+        "StateUpdatedTimestamp": "2024-08-15T23:12:55.627000+00:00"
+    },
+    {
+        "AlarmName": "***CRITICAL*** prod HA-Urbis - UNHEALTHY instances in BhUrbisHaCashwasteReverseApiTg TargetGroup",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:***CRITICAL*** prod HA-Urbis - UNHEALTHY instances in BhUrbisHaCashwasteReverseApiTg TargetGroup",
+        "AlarmDescription": "Alarms when none healthy instances in prodBhUrbisHaCashwasteReverseApiTg",
+        "Namespace": "AWS/ApplicationELB",
+        "StateUpdatedTimestamp": "2024-09-26T20:54:46.254000+00:00"
+    },
+    {
+        "AlarmName": "***CRITICAL*** prod HA-Urbis - UNHEALTHY instances in BhUrbisHaChargesApiTg TargetGroup",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:***CRITICAL*** prod HA-Urbis - UNHEALTHY instances in BhUrbisHaChargesApiTg TargetGroup",
+        "AlarmDescription": "Alarms when none healthy instances in prodBhUrbisHaChargesApiTg",
+        "Namespace": "AWS/ApplicationELB",
+        "StateUpdatedTimestamp": "2024-08-15T23:11:01.854000+00:00"
+    },
+    {
+        "AlarmName": "***CRITICAL*** prod HA-Urbis - UNHEALTHY instances in BhUrbisHaCleanPymntSngleCApiTg TargetGroup",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:***CRITICAL*** prod HA-Urbis - UNHEALTHY instances in BhUrbisHaCleanPymntSngleCApiTg TargetGroup",
+        "AlarmDescription": "Alarms when none healthy instances in prodBhUrbisHaCleanPymntSngleCApiTg",
+        "Namespace": "AWS/ApplicationELB",
+        "StateUpdatedTimestamp": "2024-08-15T23:13:29.411000+00:00"
+    },
+    {
+        "AlarmName": "***CRITICAL*** prod HA-Urbis - UNHEALTHY instances in BhUrbisHaClientapiApiTg TargetGroup",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:***CRITICAL*** prod HA-Urbis - UNHEALTHY instances in BhUrbisHaClientapiApiTg TargetGroup",
+        "AlarmDescription": "Alarms when none healthy instances in prodBhUrbisHaClientapiApiTg",
+        "Namespace": "AWS/ApplicationELB",
+        "StateUpdatedTimestamp": "2024-08-15T23:11:54.154000+00:00"
+    },
+    {
+        "AlarmName": "***CRITICAL*** prod HA-Urbis - UNHEALTHY instances in BhUrbisHaHoldApiTg TargetGroup",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:***CRITICAL*** prod HA-Urbis - UNHEALTHY instances in BhUrbisHaHoldApiTg TargetGroup",
+        "AlarmDescription": "Alarms when none healthy instances in prodBhUrbisHaHoldApiTg",
+        "Namespace": "AWS/ApplicationELB",
+        "StateUpdatedTimestamp": "2024-08-15T23:13:12.586000+00:00"
+    },
+    {
+        "AlarmName": "***CRITICAL*** prod HA-Urbis - UNHEALTHY instances in BhUrbisHaINCashwAPIApiTg TargetGroup",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:***CRITICAL*** prod HA-Urbis - UNHEALTHY instances in BhUrbisHaINCashwAPIApiTg TargetGroup",
+        "AlarmDescription": "Alarms when none healthy instances in prodBhUrbisHaINCashwAPIApiTg",
+        "Namespace": "AWS/ApplicationELB",
+        "StateUpdatedTimestamp": "2024-08-15T23:12:43.469000+00:00"
+    },
+    {
+        "AlarmName": "***CRITICAL*** prod HA-Urbis - UNHEALTHY instances in BhUrbisHaReactivationAcctApiTg TargetGroup",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:***CRITICAL*** prod HA-Urbis - UNHEALTHY instances in BhUrbisHaReactivationAcctApiTg TargetGroup",
+        "AlarmDescription": "Alarms when none healthy instances in prodBhUrbisHaReactivationAcctApiTg",
+        "Namespace": "AWS/ApplicationELB",
+        "StateUpdatedTimestamp": "2024-08-15T23:11:52.713000+00:00"
+    },
+    {
+        "AlarmName": "***CRITICAL*** prod HA-Urbis - UNHEALTHY instances in BhUrbisHaStandingOrderApiTg TargetGroup",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:***CRITICAL*** prod HA-Urbis - UNHEALTHY instances in BhUrbisHaStandingOrderApiTg TargetGroup",
+        "AlarmDescription": "Alarms when none healthy instances in prodBhUrbisHaStandingOrderApiTg",
+        "Namespace": "AWS/ApplicationELB",
+        "StateUpdatedTimestamp": "2024-08-15T23:11:54.611000+00:00"
+    },
+    {
+        "AlarmName": "***CRITICAL*** prod HA-Urbis - UNHEALTHY instances in BhUrbisHaTermDepositApiTg TargetGroup",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:***CRITICAL*** prod HA-Urbis - UNHEALTHY instances in BhUrbisHaTermDepositApiTg TargetGroup",
+        "AlarmDescription": "Alarms when none healthy instances in prodBhUrbisHaTermDepositApiTg",
+        "Namespace": "AWS/ApplicationELB",
+        "StateUpdatedTimestamp": "2024-08-15T23:12:47.057000+00:00"
+    },
+    {
+        "AlarmName": "***CRITICAL*** prod HA-Urbis - UNHEALTHY instances in BhUrbisHaTermDpstScheduleApiTg TargetGroup",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:***CRITICAL*** prod HA-Urbis - UNHEALTHY instances in BhUrbisHaTermDpstScheduleApiTg TargetGroup",
+        "AlarmDescription": "Alarms when none healthy instances in prodBhUrbisHaTermDpstScheduleApiTg",
+        "Namespace": "AWS/ApplicationELB",
+        "StateUpdatedTimestamp": "2024-08-15T23:12:17.436000+00:00"
+    },
+    {
+        "AlarmName": "***CRITICAL*** prod iLa-Jor HA-Urbis ATMapi API is DOWN - UNHEALTHY instances in JorUrbisHaATMapiApiTg TG",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:***CRITICAL*** prod iLa-Jor HA-Urbis ATMapi API is DOWN - UNHEALTHY instances in JorUrbisHaATMapiApiTg TG",
+        "AlarmDescription": "Alarms when none healthy instances in prodJorUrbisHaATMapiApiTg",
+        "Namespace": "AWS/ApplicationELB",
+        "StateUpdatedTimestamp": "2024-08-15T23:38:24.717000+00:00"
+    },
+    {
+        "AlarmName": "***CRITICAL*** prod iLa-Jor HA-Urbis AccountClosure API is DOWN - UNHEALTHY instances in JorUrbisHaAccountClosureApiTg TG",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:***CRITICAL*** prod iLa-Jor HA-Urbis AccountClosure API is DOWN - UNHEALTHY instances in JorUrbisHaAccountClosureApiTg TG",
+        "AlarmDescription": "Alarms when none healthy instances in prodJorUrbisHaAccountClosureApiTg",
+        "Namespace": "AWS/ApplicationELB",
+        "StateUpdatedTimestamp": "2024-08-15T23:38:25.336000+00:00"
+    },
+    {
+        "AlarmName": "***CRITICAL*** prod iLa-Jor HA-Urbis Accounts API is DOWN - UNHEALTHY instances in JorUrbisHaAccountsApiTg TG",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:***CRITICAL*** prod iLa-Jor HA-Urbis Accounts API is DOWN - UNHEALTHY instances in JorUrbisHaAccountsApiTg TG",
+        "AlarmDescription": "Alarms when none healthy instances in prodJorUrbisHaAccountsApiTg",
+        "Namespace": "AWS/ApplicationELB",
+        "StateUpdatedTimestamp": "2024-08-15T23:38:54.184000+00:00"
+    },
+    {
+        "AlarmName": "***CRITICAL*** prod iLa-Jor HA-Urbis CashwasteReverse API is DOWN - UNHEALTHY instances in JorUrbisHaCashwasteReverseApiTg TG",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:***CRITICAL*** prod iLa-Jor HA-Urbis CashwasteReverse API is DOWN - UNHEALTHY instances in JorUrbisHaCashwasteReverseApiTg TG",
+        "AlarmDescription": "Alarms when none healthy instances in prodJorUrbisHaCashwasteReverseApiTg",
+        "Namespace": "AWS/ApplicationELB",
+        "StateUpdatedTimestamp": "2024-08-15T23:38:35.380000+00:00"
+    },
+    {
+        "AlarmName": "***CRITICAL*** prod iLa-Jor HA-Urbis Charges API is DOWN - UNHEALTHY instances in JorUrbisHaChargesApiTg TG",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:***CRITICAL*** prod iLa-Jor HA-Urbis Charges API is DOWN - UNHEALTHY instances in JorUrbisHaChargesApiTg TG",
+        "AlarmDescription": "Alarms when none healthy instances in prodJorUrbisHaChargesApiTg",
+        "Namespace": "AWS/ApplicationELB",
+        "StateUpdatedTimestamp": "2024-08-15T23:38:05.596000+00:00"
+    },
+    {
+        "AlarmName": "***CRITICAL*** prod iLa-Jor HA-Urbis CleanPaymentAPISingleCall API is DOWN - UNHEALTHY instances in JorUrbisHaCleanPymntSngleCApiTg TG",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:***CRITICAL*** prod iLa-Jor HA-Urbis CleanPaymentAPISingleCall API is DOWN - UNHEALTHY instances in JorUrbisHaCleanPymntSngleCApiTg TG",
+        "AlarmDescription": "Alarms when none healthy instances in prodJorUrbisHaCleanPymntSngleCApiTg",
+        "Namespace": "AWS/ApplicationELB",
+        "StateUpdatedTimestamp": "2024-08-15T23:38:08.199000+00:00"
+    },
+    {
+        "AlarmName": "***CRITICAL*** prod iLa-Jor HA-Urbis CleanPaymentSingleCall API is DOWN - UNHEALTHY instances in JorUrbisHaCleannPaymtSnglCApiTg TG",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:***CRITICAL*** prod iLa-Jor HA-Urbis CleanPaymentSingleCall API is DOWN - UNHEALTHY instances in JorUrbisHaCleannPaymtSnglCApiTg TG",
+        "AlarmDescription": "Alarms when none healthy instances in prodJorUrbisHaCleannPaymtSnglCApiTg",
+        "Namespace": "AWS/ApplicationELB",
+        "StateUpdatedTimestamp": "2024-02-18T18:54:06.434000+00:00"
+    },
+    {
+        "AlarmName": "***CRITICAL*** prod iLa-Jor HA-Urbis Clientapi API is DOWN - UNHEALTHY instances in JorUrbisHaClientapiApiTg TG",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:***CRITICAL*** prod iLa-Jor HA-Urbis Clientapi API is DOWN - UNHEALTHY instances in JorUrbisHaClientapiApiTg TG",
+        "AlarmDescription": "Alarms when none healthy instances in prodJorUrbisHaClientapiApiTg",
+        "Namespace": "AWS/ApplicationELB",
+        "StateUpdatedTimestamp": "2024-08-15T23:38:57.700000+00:00"
+    },
+    {
+        "AlarmName": "***CRITICAL*** prod iLa-Jor HA-Urbis Hold API is DOWN - UNHEALTHY instances in JorUrbisHaHoldApiTg TG",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:***CRITICAL*** prod iLa-Jor HA-Urbis Hold API is DOWN - UNHEALTHY instances in JorUrbisHaHoldApiTg TG",
+        "AlarmDescription": "Alarms when none healthy instances in prodJorUrbisHaHoldApiTg",
+        "Namespace": "AWS/ApplicationELB",
+        "StateUpdatedTimestamp": "2024-08-15T23:38:35.771000+00:00"
+    },
+    {
+        "AlarmName": "***CRITICAL*** prod iLa-Jor HA-Urbis ReactivationAccount API is DOWN - UNHEALTHY instances in JorUrbisHaReactivationAcctApiTg TG",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:***CRITICAL*** prod iLa-Jor HA-Urbis ReactivationAccount API is DOWN - UNHEALTHY instances in JorUrbisHaReactivationAcctApiTg TG",
+        "AlarmDescription": "Alarms when none healthy instances in prodJorUrbisHaReactivationAcctApiTg",
+        "Namespace": "AWS/ApplicationELB",
+        "StateUpdatedTimestamp": "2024-08-15T23:38:21.924000+00:00"
+    },
+    {
+        "AlarmName": "***CRITICAL*** prod iLa-Jor HA-Urbis StandingOrder API is DOWN - UNHEALTHY instances in JorUrbisHaStandingOrderApiTg TG",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:***CRITICAL*** prod iLa-Jor HA-Urbis StandingOrder API is DOWN - UNHEALTHY instances in JorUrbisHaStandingOrderApiTg TG",
+        "AlarmDescription": "Alarms when none healthy instances in prodJorUrbisHaStandingOrderApiTg",
+        "Namespace": "AWS/ApplicationELB",
+        "StateUpdatedTimestamp": "2024-08-15T23:38:26.750000+00:00"
+    },
+    {
+        "AlarmName": "***CRITICAL*** prod iLa-Jor HA-Urbis TermDeposit API is DOWN - UNHEALTHY instances in JorUrbisHaTermDepositApiTg TG",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:***CRITICAL*** prod iLa-Jor HA-Urbis TermDeposit API is DOWN - UNHEALTHY instances in JorUrbisHaTermDepositApiTg TG",
+        "AlarmDescription": "Alarms when none healthy instances in prodJorUrbisHaTermDepositApiTg",
+        "Namespace": "AWS/ApplicationELB",
+        "StateUpdatedTimestamp": "2024-08-15T23:38:42.824000+00:00"
+    },
+    {
+        "AlarmName": "***CRITICAL*** prod iLa-Jor HA-Urbis TermDepositSchedule API is DOWN - UNHEALTHY instances in JorUrbisHaTermDpstScheduleApiTg TG",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:***CRITICAL*** prod iLa-Jor HA-Urbis TermDepositSchedule API is DOWN - UNHEALTHY instances in JorUrbisHaTermDpstScheduleApiTg TG",
+        "AlarmDescription": "Alarms when none healthy instances in prodJorUrbisHaTermDpstScheduleApiTg",
+        "Namespace": "AWS/ApplicationELB",
+        "StateUpdatedTimestamp": "2024-08-15T23:39:43.728000+00:00"
+    },
+    {
+        "AlarmName": "***CRITICAL*** prod iLa-Jor HA-Urbis cabac API is DOWN - UNHEALTHY instances in JorUrbisHaCabacApiTg TG",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:***CRITICAL*** prod iLa-Jor HA-Urbis cabac API is DOWN - UNHEALTHY instances in JorUrbisHaCabacApiTg TG",
+        "AlarmDescription": "Alarms when none healthy instances in prodJorUrbisHaCabacApiTg",
+        "Namespace": "AWS/ApplicationELB",
+        "StateUpdatedTimestamp": "2024-08-15T23:39:18.776000+00:00"
+    },
+    {
+        "AlarmName": "***CRITICAL*** prod iLa-Jor HA-Urbis cashwaste API is DOWN - UNHEALTHY instances in JorUrbisHaCashwasteApiTg TG",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:***CRITICAL*** prod iLa-Jor HA-Urbis cashwaste API is DOWN - UNHEALTHY instances in JorUrbisHaCashwasteApiTg TG",
+        "AlarmDescription": "Alarms when none healthy instances in prodJorUrbisHaCashwasteApiTg",
+        "Namespace": "AWS/ApplicationELB",
+        "StateUpdatedTimestamp": "2024-08-15T23:39:47.612000+00:00"
+    },
+    {
+        "AlarmName": "AFAQ Load Data Error",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:AFAQ Load Data Error",
+        "AlarmDescription": null,
+        "Namespace": "AfaqErrorMetric",
+        "StateUpdatedTimestamp": "2024-11-19T05:47:49.857000+00:00"
+    },
+    {
+        "AlarmName": "AFAQ Transactions Alarm",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:AFAQ Transactions Alarm",
+        "AlarmDescription": null,
+        "Namespace": "AfaqErrorMetric",
+        "StateUpdatedTimestamp": "2024-11-19T05:37:48.622000+00:00"
+    },
+    {
+        "AlarmName": "AWS-IPMonitoring-Ping",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:AWS-IPMonitoring-Ping",
+        "AlarmDescription": "AWS IP Monitoring Ping failed ",
+        "Namespace": "AWSSupport-SetupIPMonitoringFromVPC/subnet-0c8524b4b143f0e28/i-0f70bcf949067af6c",
+        "StateUpdatedTimestamp": "2024-02-12T18:12:34.978000+00:00"
+    },
+    {
+        "AlarmName": "AWS-IPMonitoringTool Ping is back OK",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:AWS-IPMonitoringTool Ping is back OK",
+        "AlarmDescription": "AWS-IPMonitoringTool Ping is back OK",
+        "Namespace": "AWSSupport-SetupIPMonitoringFromVPC/subnet-0c8524b4b143f0e28/i-0f70bcf949067af6c",
+        "StateUpdatedTimestamp": "2024-02-12T18:21:19.769000+00:00"
+    },
+    {
+        "AlarmName": "Api Jor Tmsx-client Liveness Probe Failed",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:Api Jor Tmsx-client Liveness Probe Failed",
+        "AlarmDescription": null,
+        "Namespace": "LogMetrics",
+        "StateUpdatedTimestamp": "2024-10-01T13:47:03.533000+00:00"
+    },
+    {
+        "AlarmName": "Api Jor Tmsx-client Readiness Probe Failed",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:Api Jor Tmsx-client Readiness Probe Failed",
+        "AlarmDescription": null,
+        "Namespace": "LogMetrics",
+        "StateUpdatedTimestamp": "2024-10-01T13:47:15.876000+00:00"
+    },
+    {
+        "AlarmName": "Api Jor Tmsx-jo Liveness Probe Failed",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:Api Jor Tmsx-jo Liveness Probe Failed",
+        "AlarmDescription": null,
+        "Namespace": "LogMetrics",
+        "StateUpdatedTimestamp": "2024-08-26T16:25:34.586000+00:00"
+    },
+    {
+        "AlarmName": "Api Jor Tmsx-jo Readiness Probe Failed",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:Api Jor Tmsx-jo Readiness Probe Failed",
+        "AlarmDescription": null,
+        "Namespace": "LogMetrics",
+        "StateUpdatedTimestamp": "2024-11-12T23:25:21.448000+00:00"
+    },
+    {
+        "AlarmName": "BB_Performance",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:BB_Performance",
+        "AlarmDescription": null,
+        "Namespace": "Lambda-Ping/HTTP",
+        "StateUpdatedTimestamp": "2024-10-28T10:24:29.995000+00:00"
+    },
+    {
+        "AlarmName": "BH: API Aurora DB - 1",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:BH: API Aurora DB - 1",
+        "AlarmDescription": "# WARNING: (BH) API Aurora DB1 ==DBLOAD IS HIGH!!== ",
+        "Namespace": "AWS/RDS",
+        "StateUpdatedTimestamp": "2024-06-13T11:37:29.822000+00:00"
+    },
+    {
+        "AlarmName": "BH: API Aurora DB - 3",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:BH: API Aurora DB - 3",
+        "AlarmDescription": "# WARNING: (BH) API Aurora DB3 == DBLOAD IS HIGH!! == ",
+        "Namespace": "AWS/RDS",
+        "StateUpdatedTimestamp": "2024-10-24T07:07:54.603000+00:00"
+    },
+    {
+        "AlarmName": "BackBase Liveness Probe Failed",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:BackBase Liveness Probe Failed",
+        "AlarmDescription": null,
+        "Namespace": "LogMetrics",
+        "StateUpdatedTimestamp": "2024-10-17T16:44:55.495000+00:00"
+    },
+    {
+        "AlarmName": "BackBase Readiness Probe Failed",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:BackBase Readiness Probe Failed",
+        "AlarmDescription": null,
+        "Namespace": "LogMetrics",
+        "StateUpdatedTimestamp": "2024-10-17T16:44:55.225000+00:00"
+    },
+    {
+        "AlarmName": "Benefit Connection Closed",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:Benefit Connection Closed",
+        "AlarmDescription": null,
+        "Namespace": "LogMetrics",
+        "StateUpdatedTimestamp": "2024-09-08T08:00:12.871000+00:00"
+    },
+    {
+        "AlarmName": "Benefit Successfully logged in",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:Benefit Successfully logged in",
+        "AlarmDescription": "Benefit Successfully logged in",
+        "Namespace": "LogMetrics",
+        "StateUpdatedTimestamp": "2024-09-08T07:50:15.954000+00:00"
+    },
+    {
+        "AlarmName": "Benefit Successfully logged off",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:Benefit Successfully logged off",
+        "AlarmDescription": "Benefit Successfully logged off",
+        "Namespace": "LogMetrics",
+        "StateUpdatedTimestamp": "2024-09-08T07:50:13.156000+00:00"
+    },
+    {
+        "AlarmName": "Benefit Timeout connecting",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:Benefit Timeout connecting",
+        "AlarmDescription": null,
+        "Namespace": "LogMetrics",
+        "StateUpdatedTimestamp": "2024-09-05T23:17:31.984000+00:00"
+    },
+    {
+        "AlarmName": "Billers Error Code 104",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:Billers Error Code 104",
+        "AlarmDescription": null,
+        "Namespace": "LogMetrics",
+        "StateUpdatedTimestamp": "2024-11-08T09:33:44.351000+00:00"
+    },
+    {
+        "AlarmName": "CBS Hold Queue Greater than 100",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:CBS Hold Queue Greater than 100",
+        "AlarmDescription": null,
+        "Namespace": "LogMetrics",
+        "StateUpdatedTimestamp": "2024-10-31T08:47:33.804000+00:00"
+    },
+    {
+        "AlarmName": "CBS Incoming Queue Greater than 100",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:CBS Incoming Queue Greater than 100",
+        "AlarmDescription": "TMSX Alarm",
+        "Namespace": "LogMetrics",
+        "StateUpdatedTimestamp": "2024-10-31T08:47:30.397000+00:00"
+    },
+    {
+        "AlarmName": "CBS to EFTS Mapping Error - Direct Debit",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:CBS to EFTS Mapping Error - Direct Debit",
+        "AlarmDescription": null,
+        "Namespace": "LogMetrics",
+        "StateUpdatedTimestamp": "2024-10-31T09:02:30.015000+00:00"
+    },
+    {
+        "AlarmName": "CBS to EFTS error code mapping not found",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:CBS to EFTS error code mapping not found",
+        "AlarmDescription": "Created by Ebrahim Albasri",
+        "Namespace": "LogMetrics",
+        "StateUpdatedTimestamp": "2024-09-05T21:44:32.273000+00:00"
+    },
+    {
+        "AlarmName": "Change on Raffle database script function",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:Change on Raffle database script function",
+        "AlarmDescription": "Detected some changes to the Raffle db function script",
+        "Namespace": "AuditLogs",
+        "StateUpdatedTimestamp": "2024-11-10T09:15:48.800000+00:00"
+    },
+    {
+        "AlarmName": "Dormacy: FAILED INVOCATIONS",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:Dormacy: FAILED INVOCATIONS",
+        "AlarmDescription": "# Triggering Dormancy Job Failed \n",
+        "Namespace": "AWS/Events",
+        "StateUpdatedTimestamp": "2024-01-02T08:24:30.033000+00:00"
+    },
+    {
+        "AlarmName": "Dormacy: Lambda Job Error",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:Dormacy: Lambda Job Error",
+        "AlarmDescription": "**Lambda Job Error**\n",
+        "Namespace": "AWS/Lambda",
+        "StateUpdatedTimestamp": "2024-11-19T02:22:44.953000+00:00"
+    },
+    {
+        "AlarmName": "Dormancy Daily Run No Results",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:Dormancy Daily Run No Results",
+        "AlarmDescription": "# Dormancy Daily Run No Results\nRelated to /aws/lambda/dormancy-detection-dailyRun\n",
+        "Namespace": "LogMetrics",
+        "StateUpdatedTimestamp": "2024-11-19T02:32:15.309000+00:00"
+    },
+    {
+        "AlarmName": "Dormancy Daily Run Task Timed Out",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:Dormancy Daily Run Task Timed Out",
+        "AlarmDescription": "Related to /aws/lambda/dormancy-detection-dailyRun",
+        "Namespace": "LogMetrics",
+        "StateUpdatedTimestamp": "2024-11-19T02:32:48.753000+00:00"
+    },
+    {
+        "AlarmName": "EA6-Reference-document-is-not-found",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:EA6-Reference-document-is-not-found",
+        "AlarmDescription": null,
+        "Namespace": "LogMetrics",
+        "StateUpdatedTimestamp": "2024-09-08T08:00:53.446000+00:00"
+    },
+    {
+        "AlarmName": "EP106 Invalid value - Direct Debit",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:EP106 Invalid value - Direct Debit",
+        "AlarmDescription": null,
+        "Namespace": "LogMetrics",
+        "StateUpdatedTimestamp": "2024-09-08T08:00:21.761000+00:00"
+    },
+    {
+        "AlarmName": "ERROR Code 104",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:ERROR Code 104",
+        "AlarmDescription": null,
+        "Namespace": "LogMetrics",
+        "StateUpdatedTimestamp": "2024-11-15T00:55:53.996000+00:00"
+    },
+    {
+        "AlarmName": "ERROR:  ILAAPI-SFTP-LAMBDA",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:ERROR:  ILAAPI-SFTP-LAMBDA",
+        "AlarmDescription": "# ERROR: ILAAPI-SFTP-LAMBDA",
+        "Namespace": "AWS/Lambda",
+        "StateUpdatedTimestamp": "2024-11-18T13:46:18.746000+00:00"
+    },
+    {
+        "AlarmName": "Fawri Transfer Error 104",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:Fawri Transfer Error 104",
+        "AlarmDescription": null,
+        "Namespace": "LogMetrics",
+        "StateUpdatedTimestamp": "2024-11-19T06:54:02.271000+00:00"
+    },
+    {
+        "AlarmName": "Fawri+-Incoming-Timeouts",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:Fawri+-Incoming-Timeouts",
+        "AlarmDescription": null,
+        "Namespace": "LogMetrics",
+        "StateUpdatedTimestamp": "2024-09-08T07:45:35.771000+00:00"
+    },
+    {
+        "AlarmName": "Fawri+-Outgoing-Timeouts",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:Fawri+-Outgoing-Timeouts",
+        "AlarmDescription": null,
+        "Namespace": "LogMetrics",
+        "StateUpdatedTimestamp": "2024-09-08T07:45:32.355000+00:00"
+    },
+    {
+        "AlarmName": "GW-ACH Duration > 2",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:GW-ACH Duration > 2",
+        "AlarmDescription": null,
+        "Namespace": "LogMetrics",
+        "StateUpdatedTimestamp": "2024-10-31T09:02:04.128000+00:00"
+    },
+    {
+        "AlarmName": "ISD_FAILEDONBOARDING",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:ISD_FAILEDONBOARDING",
+        "AlarmDescription": null,
+        "Namespace": "ISDFailedOnboarding",
+        "StateUpdatedTimestamp": "2024-11-14T17:23:43.501000+00:00"
+    },
+    {
+        "AlarmName": "Incoming EFTS timeout",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:Incoming EFTS timeout",
+        "AlarmDescription": null,
+        "Namespace": "LogMetrics",
+        "StateUpdatedTimestamp": "2024-10-23T00:24:23.254000+00:00"
+    },
+    {
+        "AlarmName": "JOR: API Aurora DB1 - DBLoad",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:JOR: API Aurora DB1 - DBLoad",
+        "AlarmDescription": "# WARNING: (JOR) API Aurora DB1 ==DBLOAD IS HIGH!!== ",
+        "Namespace": "AWS/RDS",
+        "StateUpdatedTimestamp": "2024-05-03T19:55:47.830000+00:00"
+    },
+    {
+        "AlarmName": "JOR: API Aurora DB2 - DBLoad",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:JOR: API Aurora DB2 - DBLoad",
+        "AlarmDescription": "# WARNING: (JOR) API Aurora DB2 ==DBLOAD IS HIGH!!== ",
+        "Namespace": "AWS/RDS",
+        "StateUpdatedTimestamp": "2024-08-18T10:33:46.748000+00:00"
+    },
+    {
+        "AlarmName": "Logon Refusal by Benefit",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:Logon Refusal by Benefit",
+        "AlarmDescription": "Logon Refusal by Benefit",
+        "Namespace": "LogMetrics",
+        "StateUpdatedTimestamp": "2024-10-31T08:25:38.392000+00:00"
+    },
+    {
+        "AlarmName": "MoEngage1002Error",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:MoEngage1002Error",
+        "AlarmDescription": null,
+        "Namespace": "MoEngageErrors",
+        "StateUpdatedTimestamp": "2024-11-18T05:40:51.961000+00:00"
+    },
+    {
+        "AlarmName": "Network Dip",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:Network Dip",
+        "AlarmDescription": null,
+        "Namespace": "AWS/EC2",
+        "StateUpdatedTimestamp": "2024-06-01T20:21:24.155000+00:00"
+    },
+    {
+        "AlarmName": "Notification Worker Error",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:Notification Worker Error",
+        "AlarmDescription": null,
+        "Namespace": "LogMetrics",
+        "StateUpdatedTimestamp": "2024-11-19T08:40:57.568000+00:00"
+    },
+    {
+        "AlarmName": "PCI - Unhealthy instances",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:PCI - Unhealthy instances",
+        "AlarmDescription": "One or more PCI instances Unhealthy pls check the PCI ASG and ALB TG",
+        "Namespace": "AWS/NetworkELB",
+        "StateUpdatedTimestamp": "2024-10-31T02:36:25.839000+00:00"
+    },
+    {
+        "AlarmName": "Payment Exception on API/Urbis (unmapped exceptions)",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:Payment Exception on API/Urbis (unmapped exceptions)",
+        "AlarmDescription": "Payment Exception on API/Urbis (unmapped exceptions)",
+        "Namespace": "LogMetrics",
+        "StateUpdatedTimestamp": "2024-11-19T02:09:04.650000+00:00"
+    },
+    {
+        "AlarmName": "PowerBi-Servie-Test",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:PowerBi-Servie-Test",
+        "AlarmDescription": "one of the services is down. ",
         "Namespace": null,
-        "StateUpdatedTimestamp": "2024-03-25T10:12:25.512000+00:00"
+        "StateUpdatedTimestamp": "2024-07-11T17:12:05.273000+00:00"
     },
     {
-        "AlarmName": "AWSResilienceHub-EKSDeploymentHighCpuUtilizationAlarm-2024-01-01_Backbase_19b3a3db-c2c8-4a68-9be3-b2183feba561",
-        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:132405888043:alarm:AWSResilienceHub-EKSDeploymentHighCpuUtilizationAlarm-2024-01-01_Backbase_19b3a3db-c2c8-4a68-9be3-b2183feba561",
-        "AlarmDescription": "An alarm by AWS Resilience Hub that reports when the pod's average CPU utilization for a deployment exceeds 120 percent of the reserved CPU capacity per pod.",
+        "AlarmName": "Raffle DATABASE Changes",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:Raffle DATABASE Changes",
+        "AlarmDescription": "Detected some changes to the Raffle db",
+        "Namespace": "AuditLogs",
+        "StateUpdatedTimestamp": "2024-11-10T09:13:34.996000+00:00"
+    },
+    {
+        "AlarmName": "Services Status Check",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:Services Status Check",
+        "AlarmDescription": "PowerBI Gateway Service is NOT running\nRequested By Mohamed Abdalmagd",
         "Namespace": null,
-        "StateUpdatedTimestamp": "2024-03-25T10:33:14.929000+00:00"
+        "StateUpdatedTimestamp": "2024-07-11T17:12:51.345000+00:00"
     },
     {
-        "AlarmName": "AWSResilienceHub-EKSDeploymentHighCpuUtilizationAlarm-2024-01-01_Backbase_4dec783d-b221-430c-8aff-2501944a7946",
-        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:132405888043:alarm:AWSResilienceHub-EKSDeploymentHighCpuUtilizationAlarm-2024-01-01_Backbase_4dec783d-b221-430c-8aff-2501944a7946",
-        "AlarmDescription": "An alarm by AWS Resilience Hub that reports when the pod's average CPU utilization for a deployment exceeds 120 percent of the reserved CPU capacity per pod.",
-        "Namespace": null,
-        "StateUpdatedTimestamp": "2024-03-25T10:12:25.235000+00:00"
+        "AlarmName": "Synthetics-Alarm-tarabut-health-1",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:Synthetics-Alarm-tarabut-health-1",
+        "AlarmDescription": "Synthetics alarm metric: Failed  GreaterThanOrEqualToThreshold 1",
+        "Namespace": "CloudWatchSynthetics",
+        "StateUpdatedTimestamp": "2024-11-18T19:28:22.633000+00:00"
     },
     {
-        "AlarmName": "AWSResilienceHub-EKSDeploymentHighCpuUtilizationAlarm-2024-01-01_Backbase_59041077-d489-4688-93fc-afa9f20e00fa",
-        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:132405888043:alarm:AWSResilienceHub-EKSDeploymentHighCpuUtilizationAlarm-2024-01-01_Backbase_59041077-d489-4688-93fc-afa9f20e00fa",
-        "AlarmDescription": "An alarm by AWS Resilience Hub that reports when the pod's average CPU utilization for a deployment exceeds 120 percent of the reserved CPU capacity per pod.",
-        "Namespace": null,
-        "StateUpdatedTimestamp": "2024-03-25T10:12:25.379000+00:00"
-    },
-    {
-        "AlarmName": "AWSResilienceHub-EKSDeploymentHighCpuUtilizationAlarm-2024-01-01_Backbase_642ebf59-af28-41b8-bcb6-6ec313287c1e",
-        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:132405888043:alarm:AWSResilienceHub-EKSDeploymentHighCpuUtilizationAlarm-2024-01-01_Backbase_642ebf59-af28-41b8-bcb6-6ec313287c1e",
-        "AlarmDescription": "An alarm by AWS Resilience Hub that reports when the pod's average CPU utilization for a deployment exceeds 120 percent of the reserved CPU capacity per pod.",
-        "Namespace": null,
-        "StateUpdatedTimestamp": "2024-03-25T10:12:25.472000+00:00"
-    },
-    {
-        "AlarmName": "AWSResilienceHub-EKSDeploymentHighCpuUtilizationAlarm-2024-01-01_Backbase_6b2ce093-2746-45c0-b853-8b8bbb5422fc",
-        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:132405888043:alarm:AWSResilienceHub-EKSDeploymentHighCpuUtilizationAlarm-2024-01-01_Backbase_6b2ce093-2746-45c0-b853-8b8bbb5422fc",
-        "AlarmDescription": "An alarm by AWS Resilience Hub that reports when the pod's average CPU utilization for a deployment exceeds 120 percent of the reserved CPU capacity per pod.",
-        "Namespace": null,
-        "StateUpdatedTimestamp": "2024-03-25T10:12:25.504000+00:00"
-    },
-    {
-        "AlarmName": "AWSResilienceHub-EKSDeploymentHighCpuUtilizationAlarm-2024-01-01_Backbase_9aedbfd6-97d4-491c-b120-02c42ea1395e",
-        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:132405888043:alarm:AWSResilienceHub-EKSDeploymentHighCpuUtilizationAlarm-2024-01-01_Backbase_9aedbfd6-97d4-491c-b120-02c42ea1395e",
-        "AlarmDescription": "An alarm by AWS Resilience Hub that reports when the pod's average CPU utilization for a deployment exceeds 120 percent of the reserved CPU capacity per pod.",
-        "Namespace": null,
-        "StateUpdatedTimestamp": "2024-03-25T10:12:25.404000+00:00"
-    },
-    {
-        "AlarmName": "AWSResilienceHub-EKSDeploymentHighCpuUtilizationAlarm-2024-01-01_Backbase_a1d74f8e-dea5-4c9f-b901-63cbe46c1224",
-        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:132405888043:alarm:AWSResilienceHub-EKSDeploymentHighCpuUtilizationAlarm-2024-01-01_Backbase_a1d74f8e-dea5-4c9f-b901-63cbe46c1224",
-        "AlarmDescription": "An alarm by AWS Resilience Hub that reports when the pod's average CPU utilization for a deployment exceeds 120 percent of the reserved CPU capacity per pod.",
-        "Namespace": null,
-        "StateUpdatedTimestamp": "2024-03-25T10:12:25.327000+00:00"
-    },
-    {
-        "AlarmName": "AWSResilienceHub-EKSDeploymentHighCpuUtilizationAlarm-2024-01-01_Backbase_e37e3cf8-3f54-4313-bc60-9c6929c02e81",
-        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:132405888043:alarm:AWSResilienceHub-EKSDeploymentHighCpuUtilizationAlarm-2024-01-01_Backbase_e37e3cf8-3f54-4313-bc60-9c6929c02e81",
-        "AlarmDescription": "An alarm by AWS Resilience Hub that reports when the pod's average CPU utilization for a deployment exceeds 120 percent of the reserved CPU capacity per pod.",
-        "Namespace": null,
-        "StateUpdatedTimestamp": "2024-03-25T10:12:25.571000+00:00"
-    },
-    {
-        "AlarmName": "EventBridgeRuleChangesAlarm",
-        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:132405888043:alarm:EventBridgeRuleChangesAlarm",
-        "AlarmDescription": "Alarm for enabling or disabling EventBridge rules",
-        "Namespace": "CloudTrail/EventBridgeRule",
-        "StateUpdatedTimestamp": "2024-09-17T05:43:11.464000+00:00"
-    },
-    {
-        "AlarmName": "TCP: BenefitBankAPIRoute53Healthcheck3",
-        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:132405888043:alarm:TCP: BenefitBankAPIRoute53Healthcheck3",
+        "AlarmName": "TCP: UrbisDBReadReplica1HealthCheck",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:TCP: UrbisDBReadReplica1HealthCheck",
         "AlarmDescription": "Alarm for Route53 Health Check",
         "Namespace": "Route53PrivateHealthCheck",
-        "StateUpdatedTimestamp": "2024-07-06T09:26:06.588000+00:00"
+        "StateUpdatedTimestamp": "2024-03-21T23:55:06.882000+00:00"
     },
     {
-        "AlarmName": "TargetTracking-table/Test-SQL-DMS-AlarmHigh-dc66eef1-c7c1-46a5-b319-456d37c2b532",
-        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:132405888043:alarm:TargetTracking-table/Test-SQL-DMS-AlarmHigh-dc66eef1-c7c1-46a5-b319-456d37c2b532",
-        "AlarmDescription": "DO NOT EDIT OR DELETE. For TargetTrackingScaling policy arn:aws:autoscaling:eu-west-1:132405888043:scalingPolicy:a6b0e41f-bbb8-48fc-a987-5118e9f60e55:resource/dynamodb/table/Test-SQL-DMS:policyName/$Test-SQL-DMS-scaling-policy:createdBy/938cab3b-ad6b-477e-adcf-8e94d7b61d2c.",
-        "Namespace": "AWS/DynamoDB",
-        "StateUpdatedTimestamp": "2024-03-05T08:47:19.198000+00:00"
+        "AlarmName": "TCP: UrbisDBReadReplica2HealthCheck",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:TCP: UrbisDBReadReplica2HealthCheck",
+        "AlarmDescription": "Alarm for Route53 Health Check",
+        "Namespace": "Route53PrivateHealthCheck",
+        "StateUpdatedTimestamp": "2024-06-11T13:22:33.853000+00:00"
     },
     {
-        "AlarmName": "TargetTracking-table/Test-SQL-DMS-AlarmHigh-e0e37ed7-8faf-4930-b81c-44501600cac2",
-        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:132405888043:alarm:TargetTracking-table/Test-SQL-DMS-AlarmHigh-e0e37ed7-8faf-4930-b81c-44501600cac2",
-        "AlarmDescription": "DO NOT EDIT OR DELETE. For TargetTrackingScaling policy arn:aws:autoscaling:eu-west-1:132405888043:scalingPolicy:2ade4f4c-17bf-43d5-a054-75552817a60e:resource/dynamodb/table/Test-SQL-DMS:policyName/$Test-SQL-DMS-scaling-policy:createdBy/8a6d1db7-5ed8-4803-8bd1-ed3fdd3d62ce.",
-        "Namespace": "AWS/DynamoDB",
-        "StateUpdatedTimestamp": "2024-03-05T08:48:34.218000+00:00"
+        "AlarmName": "TMSX-EFTS-DiskSpaceBelow930",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:TMSX-EFTS-DiskSpaceBelow930",
+        "AlarmDescription": null,
+        "Namespace": "AWS/RDS",
+        "StateUpdatedTimestamp": "2024-11-10T10:09:16.446000+00:00"
     },
     {
-        "AlarmName": "TargetTracking-table/Test-SQL-DMS-AlarmLow-9b5755a0-7f02-48c3-88a1-4eeb9b595afe",
-        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:132405888043:alarm:TargetTracking-table/Test-SQL-DMS-AlarmLow-9b5755a0-7f02-48c3-88a1-4eeb9b595afe",
-        "AlarmDescription": "DO NOT EDIT OR DELETE. For TargetTrackingScaling policy arn:aws:autoscaling:eu-west-1:132405888043:scalingPolicy:a6b0e41f-bbb8-48fc-a987-5118e9f60e55:resource/dynamodb/table/Test-SQL-DMS:policyName/$Test-SQL-DMS-scaling-policy:createdBy/938cab3b-ad6b-477e-adcf-8e94d7b61d2c.",
-        "Namespace": "AWS/DynamoDB",
-        "StateUpdatedTimestamp": "2024-03-05T08:48:06.091000+00:00"
+        "AlarmName": "TMSX-GW-Output-Size",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:TMSX-GW-Output-Size",
+        "AlarmDescription": null,
+        "Namespace": "LogMetrics",
+        "StateUpdatedTimestamp": "2024-10-31T08:47:32.869000+00:00"
     },
     {
-        "AlarmName": "TargetTracking-table/Test-SQL-DMS-AlarmLow-a33a06d3-898a-4424-8059-837f001e9102",
-        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:132405888043:alarm:TargetTracking-table/Test-SQL-DMS-AlarmLow-a33a06d3-898a-4424-8059-837f001e9102",
-        "AlarmDescription": "DO NOT EDIT OR DELETE. For TargetTrackingScaling policy arn:aws:autoscaling:eu-west-1:132405888043:scalingPolicy:2ade4f4c-17bf-43d5-a054-75552817a60e:resource/dynamodb/table/Test-SQL-DMS:policyName/$Test-SQL-DMS-scaling-policy:createdBy/8a6d1db7-5ed8-4803-8bd1-ed3fdd3d62ce.",
-        "Namespace": "AWS/DynamoDB",
-        "StateUpdatedTimestamp": "2024-03-05T08:47:42.550000+00:00"
+        "AlarmName": "TMSX-Unable to connect to Benefit",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:TMSX-Unable to connect to Benefit",
+        "AlarmDescription": null,
+        "Namespace": "LogMetrics",
+        "StateUpdatedTimestamp": "2024-09-05T23:08:50.293000+00:00"
     },
     {
-        "AlarmName": "TargetTracking-table/Test-SQL-DMS-ProvisionedCapacityHigh-4dd4f4fb-a7ee-4709-b175-8e2e8b388593",
-        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:132405888043:alarm:TargetTracking-table/Test-SQL-DMS-ProvisionedCapacityHigh-4dd4f4fb-a7ee-4709-b175-8e2e8b388593",
-        "AlarmDescription": "DO NOT EDIT OR DELETE. For TargetTrackingScaling policy arn:aws:autoscaling:eu-west-1:132405888043:scalingPolicy:a6b0e41f-bbb8-48fc-a987-5118e9f60e55:resource/dynamodb/table/Test-SQL-DMS:policyName/$Test-SQL-DMS-scaling-policy:createdBy/938cab3b-ad6b-477e-adcf-8e94d7b61d2c.",
-        "Namespace": "AWS/DynamoDB",
-        "StateUpdatedTimestamp": "2024-03-05T08:54:06.919000+00:00"
+        "AlarmName": "TMSX_Cluster_Timeout",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:TMSX_Cluster_Timeout",
+        "AlarmDescription": "TMSX_Cluster_Timeout",
+        "Namespace": "LogMetrics",
+        "StateUpdatedTimestamp": "2024-10-31T08:53:27.995000+00:00"
     },
     {
-        "AlarmName": "TargetTracking-table/Test-SQL-DMS-ProvisionedCapacityHigh-df0da55f-cb7d-4f5e-9628-b6a61f187343",
-        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:132405888043:alarm:TargetTracking-table/Test-SQL-DMS-ProvisionedCapacityHigh-df0da55f-cb7d-4f5e-9628-b6a61f187343",
-        "AlarmDescription": "DO NOT EDIT OR DELETE. For TargetTrackingScaling policy arn:aws:autoscaling:eu-west-1:132405888043:scalingPolicy:2ade4f4c-17bf-43d5-a054-75552817a60e:resource/dynamodb/table/Test-SQL-DMS:policyName/$Test-SQL-DMS-scaling-policy:createdBy/8a6d1db7-5ed8-4803-8bd1-ed3fdd3d62ce.",
-        "Namespace": "AWS/DynamoDB",
-        "StateUpdatedTimestamp": "2024-03-05T08:53:28.151000+00:00"
+        "AlarmName": "TMSX_EFTS_ROUTING_ENGINE_STOPPED",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:TMSX_EFTS_ROUTING_ENGINE_STOPPED",
+        "AlarmDescription": "TMSX_EFTS_ROUTING_ENGINE_STOPPED",
+        "Namespace": "LogMetrics",
+        "StateUpdatedTimestamp": "2024-03-31T08:33:21.471000+00:00"
     },
     {
-        "AlarmName": "TargetTracking-table/Test-SQL-DMS-ProvisionedCapacityLow-cbb20673-dae1-48bc-af68-9b51f464cd99",
-        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:132405888043:alarm:TargetTracking-table/Test-SQL-DMS-ProvisionedCapacityLow-cbb20673-dae1-48bc-af68-9b51f464cd99",
-        "AlarmDescription": "DO NOT EDIT OR DELETE. For TargetTrackingScaling policy arn:aws:autoscaling:eu-west-1:132405888043:scalingPolicy:a6b0e41f-bbb8-48fc-a987-5118e9f60e55:resource/dynamodb/table/Test-SQL-DMS:policyName/$Test-SQL-DMS-scaling-policy:createdBy/938cab3b-ad6b-477e-adcf-8e94d7b61d2c.",
-        "Namespace": "AWS/DynamoDB",
-        "StateUpdatedTimestamp": "2024-03-05T08:48:14.058000+00:00"
+        "AlarmName": "TMSX_EL202",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:TMSX_EL202",
+        "AlarmDescription": "Created by Ebrahim Albasri",
+        "Namespace": "LogMetrics",
+        "StateUpdatedTimestamp": "2024-09-05T21:32:30.058000+00:00"
     },
     {
-        "AlarmName": "TargetTracking-table/Test-SQL-DMS-ProvisionedCapacityLow-fe0760d9-f6bb-4e30-be2a-2472264a30b1",
-        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:132405888043:alarm:TargetTracking-table/Test-SQL-DMS-ProvisionedCapacityLow-fe0760d9-f6bb-4e30-be2a-2472264a30b1",
-        "AlarmDescription": "DO NOT EDIT OR DELETE. For TargetTrackingScaling policy arn:aws:autoscaling:eu-west-1:132405888043:scalingPolicy:2ade4f4c-17bf-43d5-a054-75552817a60e:resource/dynamodb/table/Test-SQL-DMS:policyName/$Test-SQL-DMS-scaling-policy:createdBy/8a6d1db7-5ed8-4803-8bd1-ed3fdd3d62ce.",
-        "Namespace": "AWS/DynamoDB",
-        "StateUpdatedTimestamp": "2024-03-05T08:47:41.412000+00:00"
+        "AlarmName": "TMSX_OUTPUT_Q_SIZE",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:TMSX_OUTPUT_Q_SIZE",
+        "AlarmDescription": "Created By Anmar",
+        "Namespace": "LogMetrics",
+        "StateUpdatedTimestamp": "2024-10-31T09:02:29.951000+00:00"
     },
     {
-        "AlarmName": "TargetTracking-table/gph-reminder-AlarmHigh-65ed7ddc-5ee5-4047-9c4e-987ec296e077",
-        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:132405888043:alarm:TargetTracking-table/gph-reminder-AlarmHigh-65ed7ddc-5ee5-4047-9c4e-987ec296e077",
-        "AlarmDescription": "DO NOT EDIT OR DELETE. For TargetTrackingScaling policy arn:aws:autoscaling:eu-west-1:132405888043:scalingPolicy:45eb39d5-10f3-4acb-8c3a-7961d3bf7b7d:resource/dynamodb/table/gph-reminder:policyName/$gph-reminder-scaling-policy:createdBy/1831fa40-899f-40d5-876b-34b38f6b9b8a.",
-        "Namespace": "AWS/DynamoDB",
-        "StateUpdatedTimestamp": "2024-07-10T06:24:37.515000+00:00"
+        "AlarmName": "TMSX_PING_URL_GW_10_171_240_100_No_HTTP_Resp",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:TMSX_PING_URL_GW_10_171_240_100_No_HTTP_Resp",
+        "AlarmDescription": "TMSX_PING_URL_GW_10_171_240_100_No_HTTP_Resp",
+        "Namespace": "LogMetrics",
+        "StateUpdatedTimestamp": "2024-05-14T01:56:16.455000+00:00"
     },
     {
-        "AlarmName": "TargetTracking-table/gph-reminder-AlarmHigh-b43a7fb9-23b5-46fd-8bf5-7a7f139269b8",
-        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:132405888043:alarm:TargetTracking-table/gph-reminder-AlarmHigh-b43a7fb9-23b5-46fd-8bf5-7a7f139269b8",
-        "AlarmDescription": "DO NOT EDIT OR DELETE. For TargetTrackingScaling policy arn:aws:autoscaling:eu-west-1:132405888043:scalingPolicy:77caa6bd-d0c9-4abc-a812-748bd9139552:resource/dynamodb/table/gph-reminder:policyName/$gph-reminder-scaling-policy:createdBy/e9fa0b92-3c58-48bc-8a98-12fcd17e23cd.",
-        "Namespace": "AWS/DynamoDB",
-        "StateUpdatedTimestamp": "2024-07-10T06:24:17.620000+00:00"
+        "AlarmName": "Transaction Error with NullPointerException",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:Transaction Error with NullPointerException",
+        "AlarmDescription": null,
+        "Namespace": "LogMetrics",
+        "StateUpdatedTimestamp": "2024-11-19T01:16:44.700000+00:00"
     },
     {
-        "AlarmName": "TargetTracking-table/gph-reminder-AlarmLow-587685a6-fcc8-46f1-b1ac-f714d43d85f9",
-        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:132405888043:alarm:TargetTracking-table/gph-reminder-AlarmLow-587685a6-fcc8-46f1-b1ac-f714d43d85f9",
-        "AlarmDescription": "DO NOT EDIT OR DELETE. For TargetTrackingScaling policy arn:aws:autoscaling:eu-west-1:132405888043:scalingPolicy:45eb39d5-10f3-4acb-8c3a-7961d3bf7b7d:resource/dynamodb/table/gph-reminder:policyName/$gph-reminder-scaling-policy:createdBy/1831fa40-899f-40d5-876b-34b38f6b9b8a.",
-        "Namespace": "AWS/DynamoDB",
-        "StateUpdatedTimestamp": "2024-07-10T06:24:29.908000+00:00"
+        "AlarmName": "Transaction one Service Down",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:Transaction one Service Down",
+        "AlarmDescription": null,
+        "Namespace": "LogMetrics",
+        "StateUpdatedTimestamp": "2024-11-19T02:18:58.159000+00:00"
     },
     {
-        "AlarmName": "TargetTracking-table/gph-reminder-AlarmLow-86c91123-6f73-41c2-8885-2605f965f9b5",
-        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:132405888043:alarm:TargetTracking-table/gph-reminder-AlarmLow-86c91123-6f73-41c2-8885-2605f965f9b5",
-        "AlarmDescription": "DO NOT EDIT OR DELETE. For TargetTrackingScaling policy arn:aws:autoscaling:eu-west-1:132405888043:scalingPolicy:77caa6bd-d0c9-4abc-a812-748bd9139552:resource/dynamodb/table/gph-reminder:policyName/$gph-reminder-scaling-policy:createdBy/e9fa0b92-3c58-48bc-8a98-12fcd17e23cd.",
-        "Namespace": "AWS/DynamoDB",
-        "StateUpdatedTimestamp": "2024-07-10T06:24:21.973000+00:00"
+        "AlarmName": "Transactions-Service Liveness Probe Failed",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:Transactions-Service Liveness Probe Failed",
+        "AlarmDescription": "Transactions-Service Liveness Probe Failed",
+        "Namespace": "LogMetrics",
+        "StateUpdatedTimestamp": "2024-08-15T23:16:41.292000+00:00"
     },
     {
-        "AlarmName": "TargetTracking-table/gph-reminder-ProvisionedCapacityHigh-0b452db0-25c6-4ee4-b088-5367ed10dd0e",
-        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:132405888043:alarm:TargetTracking-table/gph-reminder-ProvisionedCapacityHigh-0b452db0-25c6-4ee4-b088-5367ed10dd0e",
-        "AlarmDescription": "DO NOT EDIT OR DELETE. For TargetTrackingScaling policy arn:aws:autoscaling:eu-west-1:132405888043:scalingPolicy:45eb39d5-10f3-4acb-8c3a-7961d3bf7b7d:resource/dynamodb/table/gph-reminder:policyName/$gph-reminder-scaling-policy:createdBy/1831fa40-899f-40d5-876b-34b38f6b9b8a.",
-        "Namespace": "AWS/DynamoDB",
-        "StateUpdatedTimestamp": "2024-07-10T06:24:56.761000+00:00"
+        "AlarmName": "Transactions-Service Readiness Probe Failed",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:Transactions-Service Readiness Probe Failed",
+        "AlarmDescription": "Transactions-Service Readiness Probe Failed",
+        "Namespace": "LogMetrics",
+        "StateUpdatedTimestamp": "2024-10-25T00:53:45.083000+00:00"
     },
     {
-        "AlarmName": "TargetTracking-table/gph-reminder-ProvisionedCapacityHigh-64530f22-b237-49d6-b89e-de95d118733b",
-        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:132405888043:alarm:TargetTracking-table/gph-reminder-ProvisionedCapacityHigh-64530f22-b237-49d6-b89e-de95d118733b",
-        "AlarmDescription": "DO NOT EDIT OR DELETE. For TargetTrackingScaling policy arn:aws:autoscaling:eu-west-1:132405888043:scalingPolicy:77caa6bd-d0c9-4abc-a812-748bd9139552:resource/dynamodb/table/gph-reminder:policyName/$gph-reminder-scaling-policy:createdBy/e9fa0b92-3c58-48bc-8a98-12fcd17e23cd.",
-        "Namespace": "AWS/DynamoDB",
-        "StateUpdatedTimestamp": "2024-07-10T06:23:58.528000+00:00"
+        "AlarmName": "Transafer send Notification not process",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:Transafer send Notification not process",
+        "AlarmDescription": null,
+        "Namespace": "LogMetrics",
+        "StateUpdatedTimestamp": "2024-11-19T08:33:15.824000+00:00"
     },
     {
-        "AlarmName": "TargetTracking-table/gph-reminder-ProvisionedCapacityLow-b5451220-5957-407f-b9bb-e15e0bd3e8bd",
-        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:132405888043:alarm:TargetTracking-table/gph-reminder-ProvisionedCapacityLow-b5451220-5957-407f-b9bb-e15e0bd3e8bd",
-        "AlarmDescription": "DO NOT EDIT OR DELETE. For TargetTrackingScaling policy arn:aws:autoscaling:eu-west-1:132405888043:scalingPolicy:77caa6bd-d0c9-4abc-a812-748bd9139552:resource/dynamodb/table/gph-reminder:policyName/$gph-reminder-scaling-policy:createdBy/e9fa0b92-3c58-48bc-8a98-12fcd17e23cd.",
-        "Namespace": "AWS/DynamoDB",
-        "StateUpdatedTimestamp": "2024-07-10T06:23:19.795000+00:00"
+        "AlarmName": "Transfer API - An error has occurred",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:Transfer API - An error has occurred",
+        "AlarmDescription": "Created by: Ebrahim Albasri",
+        "Namespace": "LogMetrics",
+        "StateUpdatedTimestamp": "2024-10-01T20:34:53.309000+00:00"
     },
     {
-        "AlarmName": "TargetTracking-table/gph-reminder-ProvisionedCapacityLow-dd4ab6f3-b358-45f2-a82e-1916f5c4a4c3",
-        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:132405888043:alarm:TargetTracking-table/gph-reminder-ProvisionedCapacityLow-dd4ab6f3-b358-45f2-a82e-1916f5c4a4c3",
-        "AlarmDescription": "DO NOT EDIT OR DELETE. For TargetTrackingScaling policy arn:aws:autoscaling:eu-west-1:132405888043:scalingPolicy:45eb39d5-10f3-4acb-8c3a-7961d3bf7b7d:resource/dynamodb/table/gph-reminder:policyName/$gph-reminder-scaling-policy:createdBy/1831fa40-899f-40d5-876b-34b38f6b9b8a.",
-        "Namespace": "AWS/DynamoDB",
-        "StateUpdatedTimestamp": "2024-07-10T06:24:19.153000+00:00"
+        "AlarmName": "Transfer facing error Connection refused",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:Transfer facing error Connection refused",
+        "AlarmDescription": null,
+        "Namespace": "LogMetrics",
+        "StateUpdatedTimestamp": "2024-11-18T23:58:33.383000+00:00"
     },
     {
-        "AlarmName": "aws-cmk-changes",
-        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:132405888043:alarm:aws-cmk-changes",
-        "AlarmDescription": "Triggered by AWS CMK changes",
-        "Namespace": "CloudTrailMetrics",
-        "StateUpdatedTimestamp": "2024-07-27T01:40:17.681000+00:00"
+        "AlarmName": "URBIS_JOR_CASHWASTE_ERROR",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:URBIS_JOR_CASHWASTE_ERROR",
+        "AlarmDescription": null,
+        "Namespace": "LogMetrics",
+        "StateUpdatedTimestamp": "2024-11-17T09:12:42.922000+00:00"
     },
     {
-        "AlarmName": "aws-config-changes",
-        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:132405888043:alarm:aws-config-changes",
-        "AlarmDescription": "Triggered by AWS IAM authorization config changes",
-        "Namespace": "CloudTrailMetrics",
-        "StateUpdatedTimestamp": "2024-07-28T14:05:15.179000+00:00"
+        "AlarmName": "URBIS_JOR_SERVICE_DOWN",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:URBIS_JOR_SERVICE_DOWN",
+        "AlarmDescription": null,
+        "Namespace": "LogMetrics",
+        "StateUpdatedTimestamp": "2024-11-05T08:45:55.074000+00:00"
+    },
+    {
+        "AlarmName": "Urbis AZ01 Prod ATM-API DOWN",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:Urbis AZ01 Prod ATM-API DOWN",
+        "AlarmDescription": "Alarms when there is unhealthy target instance in Prod-AZ Standby ATM-API Targer Group",
+        "Namespace": "AWS/ApplicationELB",
+        "StateUpdatedTimestamp": "2024-05-30T11:29:31.747000+00:00"
+    },
+    {
+        "AlarmName": "Urbis AZ02 Prod ATM-API DOWN",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:Urbis AZ02 Prod ATM-API DOWN",
+        "AlarmDescription": "Alarms when there is unhealthy target instance in Prod-AZ ATM-API Targer Group",
+        "Namespace": "AWS/ApplicationELB",
+        "StateUpdatedTimestamp": "2024-05-30T11:29:06.211000+00:00"
+    },
+    {
+        "AlarmName": "Urbis Active/Active Prod ATM-API Targets Response Time exceeding 7 seconds",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:Urbis Active/Active Prod ATM-API Targets Response Time exceeding 7 seconds",
+        "AlarmDescription": "Urbis ATM-API Target Response Time exceeding 7 seconds\n\nCheck the target group UrbisATMapiApiTg Metrics for more details.\n\nCheck Urbis logs too.",
+        "Namespace": "AWS/ApplicationELB",
+        "StateUpdatedTimestamp": "2024-04-05T02:40:32.103000+00:00"
+    },
+    {
+        "AlarmName": "Urbis Active/Active Prod ATM-API Unhealthy Instances",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:Urbis Active/Active Prod ATM-API Unhealthy Instances",
+        "AlarmDescription": "Urbis Active/Active Prod ATM-API Unhealthy Instances\n\nThe TG UrbisATMapiApiTg with 2 instances Urbis-API AZ1 & AZ2 in Active/Active mode behind the ALB HaUrbis-ALB",
+        "Namespace": "AWS/ApplicationELB",
+        "StateUpdatedTimestamp": "2024-09-26T20:16:33.577000+00:00"
+    },
+    {
+        "AlarmName": "WAF_Allowed_Traffic_High",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:WAF_Allowed_Traffic_High",
+        "AlarmDescription": null,
+        "Namespace": "AWS/WAFV2",
+        "StateUpdatedTimestamp": "2024-11-18T01:05:28.026000+00:00"
+    },
+    {
+        "AlarmName": "WAF_Blocked_Traffic_Too_High",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:WAF_Blocked_Traffic_Too_High",
+        "AlarmDescription": "WAF_Blocked_Traffic_Too_High",
+        "Namespace": "AWS/WAFV2",
+        "StateUpdatedTimestamp": "2024-11-19T08:36:10.930000+00:00"
+    },
+    {
+        "AlarmName": "[BH] Urbis Read Replica 2 CPU Utilization",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:[BH] Urbis Read Replica 2 CPU Utilization",
+        "AlarmDescription": null,
+        "Namespace": "AWS/RDS",
+        "StateUpdatedTimestamp": "2024-10-06T07:13:55.628000+00:00"
+    },
+    {
+        "AlarmName": "api-aurora-1-highCPUUtilization",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:api-aurora-1-highCPUUtilization",
+        "AlarmDescription": null,
+        "Namespace": "AWS/RDS",
+        "StateUpdatedTimestamp": "2024-04-28T16:44:05.480000+00:00"
     },
     {
         "AlarmName": "aws-console-signin-nomfa",
-        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:132405888043:alarm:aws-console-signin-nomfa",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:aws-console-signin-nomfa",
         "AlarmDescription": "Triggered by sign-in requests made without MFA",
         "Namespace": "CloudTrailMetrics",
-        "StateUpdatedTimestamp": "2024-11-19T07:24:02.244000+00:00"
+        "StateUpdatedTimestamp": "2024-11-19T08:36:17.090000+00:00"
     },
     {
         "AlarmName": "aws-iam-authorization-activity",
-        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:132405888043:alarm:aws-iam-authorization-activity",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:aws-iam-authorization-activity",
         "AlarmDescription": "TF managed alarm",
         "Namespace": "CloudTrailMetrics",
-        "StateUpdatedTimestamp": "2024-11-19T07:19:09.642000+00:00"
+        "StateUpdatedTimestamp": "2024-11-19T05:14:13.290000+00:00"
+    },
+    {
+        "AlarmName": "aws-network-acl-config-changes",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:aws-network-acl-config-changes",
+        "AlarmDescription": "Triggered by AWS Network ACL(s) config changes",
+        "Namespace": "CloudTrailMetrics",
+        "StateUpdatedTimestamp": "2024-03-05T12:17:55.322000+00:00"
     },
     {
         "AlarmName": "aws-root-account-usage",
-        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:132405888043:alarm:aws-root-account-usage",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:aws-root-account-usage",
         "AlarmDescription": "Triggered by AWS Root Account usage",
         "Namespace": "CloudTrailMetrics",
-        "StateUpdatedTimestamp": "2024-07-01T06:05:37.394000+00:00"
+        "StateUpdatedTimestamp": "2024-06-03T14:06:00.656000+00:00"
     },
     {
         "AlarmName": "aws-route-table-changes",
-        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:132405888043:alarm:aws-route-table-changes",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:aws-route-table-changes",
         "AlarmDescription": "Triggered by AWS Route Table config changes",
         "Namespace": "CloudTrailMetrics",
-        "StateUpdatedTimestamp": "2024-09-11T08:16:26.776000+00:00"
+        "StateUpdatedTimestamp": "2024-10-27T22:45:23.170000+00:00"
     },
     {
         "AlarmName": "aws-s3-bucket-changes",
-        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:132405888043:alarm:aws-s3-bucket-changes",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:aws-s3-bucket-changes",
         "AlarmDescription": "Triggered by AWS S3 Bucket config changes",
         "Namespace": "CloudTrailMetrics",
-        "StateUpdatedTimestamp": "2024-10-29T11:33:45.739000+00:00"
+        "StateUpdatedTimestamp": "2024-10-21T06:38:04.987000+00:00"
     },
     {
         "AlarmName": "aws-security-group-changes",
-        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:132405888043:alarm:aws-security-group-changes",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:aws-security-group-changes",
         "AlarmDescription": "Triggered by AWS security group(s) config changes",
         "Namespace": "CloudTrailMetrics",
-        "StateUpdatedTimestamp": "2024-11-18T06:38:03.795000+00:00"
-    },
-    {
-        "AlarmName": "aws-unauthorized-api-calls",
-        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:132405888043:alarm:aws-unauthorized-api-calls",
-        "AlarmDescription": "Triggered by UnauthorizedOperations or AccessDenied",
-        "Namespace": "CloudTrailMetrics",
-        "StateUpdatedTimestamp": "2024-07-31T04:09:40.398000+00:00"
+        "StateUpdatedTimestamp": "2024-11-18T13:29:56.839000+00:00"
     },
     {
         "AlarmName": "aws-vpc-changes",
-        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:132405888043:alarm:aws-vpc-changes",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:aws-vpc-changes",
         "AlarmDescription": "Triggered by AWS VPC(s) environment config changes",
         "Namespace": "CloudTrailMetrics",
-        "StateUpdatedTimestamp": "2024-05-21T09:09:49.217000+00:00"
+        "StateUpdatedTimestamp": "2024-03-05T12:17:35.585000+00:00"
     },
     {
         "AlarmName": "aws-vpc-gateway-changes",
-        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:132405888043:alarm:aws-vpc-gateway-changes",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:aws-vpc-gateway-changes",
         "AlarmDescription": "Triggered by VPC Customer/Internet Gateway changes",
         "Namespace": "CloudTrailMetrics",
-        "StateUpdatedTimestamp": "2024-05-21T09:07:55.018000+00:00"
+        "StateUpdatedTimestamp": "2024-03-05T12:17:06.711000+00:00"
+    },
+    {
+        "AlarmName": "awsec2-i-061a7216cf37c8950-GreaterThanOrEqualToThreshold-CPUUtilization",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:awsec2-i-061a7216cf37c8950-GreaterThanOrEqualToThreshold-CPUUtilization",
+        "AlarmDescription": "Created from EC2 Console",
+        "Namespace": "AWS/EC2",
+        "StateUpdatedTimestamp": "2024-05-30T11:37:07.632000+00:00"
+    },
+    {
+        "AlarmName": "awsec2-i-066e0dc9fcc6bd8af-GreaterThanOrEqualToThreshold-CPUUtilization",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:awsec2-i-066e0dc9fcc6bd8af-GreaterThanOrEqualToThreshold-CPUUtilization",
+        "AlarmDescription": "Created from EC2 Console",
+        "Namespace": "AWS/EC2",
+        "StateUpdatedTimestamp": "2024-06-01T20:29:07.133000+00:00"
+    },
+    {
+        "AlarmName": "awsredshift-reporting-redshift-cluster-PercentageDiskSpaceUsed-ALL",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:awsredshift-reporting-redshift-cluster-PercentageDiskSpaceUsed-ALL",
+        "AlarmDescription": "awsredshift-reporting-redshift-cluster-PercentageDiskSpaceUsed-ALL",
+        "Namespace": "AWS/Redshift",
+        "StateUpdatedTimestamp": "2024-11-07T16:41:41.967000+00:00"
+    },
+    {
+        "AlarmName": "crm_audit_trail_archive_lambda_alarm",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:crm_audit_trail_archive_lambda_alarm",
+        "AlarmDescription": null,
+        "Namespace": "AWS/Lambda",
+        "StateUpdatedTimestamp": "2024-11-19T08:22:45.959000+00:00"
+    },
+    {
+        "AlarmName": "neo-alarms-sms-prod",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:neo-alarms-sms-prod",
+        "AlarmDescription": "Triggered by AWS reaching SMS limit",
+        "Namespace": "AWS/SNS",
+        "StateUpdatedTimestamp": "2024-02-01T01:01:11.836000+00:00"
+    },
+    {
+        "AlarmName": "power BI storage Utilization",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:power BI storage Utilization",
+        "AlarmDescription": "The Storage Utilization is HIGH ",
+        "Namespace": null,
+        "StateUpdatedTimestamp": "2024-02-02T12:10:46.193000+00:00"
+    },
+    {
+        "AlarmName": "rds-a24-rr1-anomalousConnectionCount",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:rds-a24-rr1-anomalousConnectionCount",
+        "AlarmDescription": "Anomalous database connection count detected. Something unusual is happening.",
+        "Namespace": null,
+        "StateUpdatedTimestamp": "2024-07-06T01:58:13.548000+00:00"
+    },
+    {
+        "AlarmName": "rds-a24-writer-anomalousConnectionCount",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:rds-a24-writer-anomalousConnectionCount",
+        "AlarmDescription": "Anomalous database connection count detected. Something unusual is happening.",
+        "Namespace": null,
+        "StateUpdatedTimestamp": "2024-10-25T02:43:53.445000+00:00"
+    },
+    {
+        "AlarmName": "rds-api-aurora-1-anomalousConnectionCount",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:rds-api-aurora-1-anomalousConnectionCount",
+        "AlarmDescription": "Anomalous database connection count detected. Something unusual is happening.",
+        "Namespace": null,
+        "StateUpdatedTimestamp": "2024-08-04T03:09:09.254000+00:00"
+    },
+    {
+        "AlarmName": "rds-api-aurora-3-anomalousConnectionCount",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:rds-api-aurora-3-anomalousConnectionCount",
+        "AlarmDescription": "Anomalous database connection count detected. Something unusual is happening.",
+        "Namespace": null,
+        "StateUpdatedTimestamp": "2024-08-27T19:20:17.809000+00:00"
+    },
+    {
+        "AlarmName": "rds-api-aurora-3-highCPUUtilization",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:rds-api-aurora-3-highCPUUtilization",
+        "AlarmDescription": null,
+        "Namespace": "AWS/RDS",
+        "StateUpdatedTimestamp": "2024-10-24T07:08:07.582000+00:00"
+    },
+    {
+        "AlarmName": "rds-api-jor-aurora-1-anomalousConnectionCount",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:rds-api-jor-aurora-1-anomalousConnectionCount",
+        "AlarmDescription": "Anomalous database connection count detected. Something unusual is happening.",
+        "Namespace": null,
+        "StateUpdatedTimestamp": "2024-06-03T15:18:14.196000+00:00"
+    },
+    {
+        "AlarmName": "rds-api-jor-aurora-1-highCPUUtilization",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:rds-api-jor-aurora-1-highCPUUtilization",
+        "AlarmDescription": null,
+        "Namespace": "AWS/RDS",
+        "StateUpdatedTimestamp": "2024-04-28T16:56:04.027000+00:00"
+    },
+    {
+        "AlarmName": "rds-api-jor-aurora-2-highCPUUtilization",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:rds-api-jor-aurora-2-highCPUUtilization",
+        "AlarmDescription": null,
+        "Namespace": "AWS/RDS",
+        "StateUpdatedTimestamp": "2024-10-27T13:19:53.462000+00:00"
+    },
+    {
+        "AlarmName": "rds-echeque-anomalousConnectionCount",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:rds-echeque-anomalousConnectionCount",
+        "AlarmDescription": "Anomalous database connection count detected. Something unusual is happening.",
+        "Namespace": null,
+        "StateUpdatedTimestamp": "2024-10-28T10:40:00.757000+00:00"
+    },
+    {
+        "AlarmName": "rds-pci-aurora-1-anomalousConnectionCount",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:rds-pci-aurora-1-anomalousConnectionCount",
+        "AlarmDescription": "Anomalous database connection count detected. Something unusual is happening.",
+        "Namespace": null,
+        "StateUpdatedTimestamp": "2024-09-15T12:45:32.167000+00:00"
+    },
+    {
+        "AlarmName": "rds-pci-aurora-2-anomalousConnectionCount",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:rds-pci-aurora-2-anomalousConnectionCount",
+        "AlarmDescription": "Anomalous database connection count detected. Something unusual is happening.",
+        "Namespace": null,
+        "StateUpdatedTimestamp": "2024-05-13T15:56:13.315000+00:00"
+    },
+    {
+        "AlarmName": "rds-pmaw91n4wfo8ya-highCPUUtilization",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:rds-pmaw91n4wfo8ya-highCPUUtilization",
+        "AlarmDescription": "Average database CPU utilization is too high.",
+        "Namespace": "AWS/RDS",
+        "StateUpdatedTimestamp": "2024-11-10T10:12:10.072000+00:00"
+    },
+    {
+        "AlarmName": "rds-pmaw91n4wfo8ya-highDiskQueueDepth",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:rds-pmaw91n4wfo8ya-highDiskQueueDepth",
+        "AlarmDescription": "Average database disk queue depth is too high, performance may be negatively impacted.",
+        "Namespace": "AWS/RDS",
+        "StateUpdatedTimestamp": "2024-11-10T10:12:05.836000+00:00"
+    },
+    {
+        "AlarmName": "rds-pmaw91n4wfo8ya-lowFreeStorageSpace",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:rds-pmaw91n4wfo8ya-lowFreeStorageSpace",
+        "AlarmDescription": "Average database free storage space is too low and may fill up soon.",
+        "Namespace": "AWS/RDS",
+        "StateUpdatedTimestamp": "2024-11-10T10:12:53.407000+00:00"
+    },
+    {
+        "AlarmName": "rds-pmaw91n4wfo8ya-lowFreeableMemory",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:rds-pmaw91n4wfo8ya-lowFreeableMemory",
+        "AlarmDescription": "Average database freeable memory is too low, performance may be negatively impacted.",
+        "Namespace": "AWS/RDS",
+        "StateUpdatedTimestamp": "2024-11-10T10:12:20.982000+00:00"
+    },
+    {
+        "AlarmName": "rds-pme5v4x54sod5w-anomalousConnectionCount",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:rds-pme5v4x54sod5w-anomalousConnectionCount",
+        "AlarmDescription": "Anomalous database connection count detected. Something unusual is happening.",
+        "Namespace": null,
+        "StateUpdatedTimestamp": "2024-10-03T02:28:06.593000+00:00"
+    },
+    {
+        "AlarmName": "rds-pme5v4x54sod5w-highCPUUtilization",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:rds-pme5v4x54sod5w-highCPUUtilization",
+        "AlarmDescription": "Average database CPU utilization is too high.",
+        "Namespace": "AWS/RDS",
+        "StateUpdatedTimestamp": "2024-10-06T01:18:26.247000+00:00"
+    },
+    {
+        "AlarmName": "rds-pme5v4x54sod5w-highDiskQueueDepth",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:rds-pme5v4x54sod5w-highDiskQueueDepth",
+        "AlarmDescription": "Average database disk queue depth is too high, performance may be negatively impacted.",
+        "Namespace": "AWS/RDS",
+        "StateUpdatedTimestamp": "2024-10-06T01:18:50.660000+00:00"
+    },
+    {
+        "AlarmName": "rds-pme5v4x54sod5w-lowEBSBurstBalance",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:rds-pme5v4x54sod5w-lowEBSBurstBalance",
+        "AlarmDescription": "Average database storage burst balance is too low, a negative performance impact is imminent.",
+        "Namespace": "AWS/RDS",
+        "StateUpdatedTimestamp": "2024-10-03T01:21:22.318000+00:00"
+    },
+    {
+        "AlarmName": "rds-pme5v4x54sod5w-lowFreeStorageSpace",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:rds-pme5v4x54sod5w-lowFreeStorageSpace",
+        "AlarmDescription": "Average database free storage space is too low and may fill up soon.",
+        "Namespace": "AWS/RDS",
+        "StateUpdatedTimestamp": "2024-10-06T01:18:30.611000+00:00"
+    },
+    {
+        "AlarmName": "rds-pme5v4x54sod5w-lowFreeableMemory",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:rds-pme5v4x54sod5w-lowFreeableMemory",
+        "AlarmDescription": "Average database freeable memory is too low, performance may be negatively impacted.",
+        "Namespace": "AWS/RDS",
+        "StateUpdatedTimestamp": "2024-10-06T01:18:36.857000+00:00"
+    },
+    {
+        "AlarmName": "rds-tmsx-efts-anomalousConnectionCount",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:rds-tmsx-efts-anomalousConnectionCount",
+        "AlarmDescription": "Anomalous database connection count detected. Something unusual is happening.",
+        "Namespace": null,
+        "StateUpdatedTimestamp": "2024-11-10T11:13:43.898000+00:00"
+    },
+    {
+        "AlarmName": "rds-tmsx-efts-highCPUUtilization",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:rds-tmsx-efts-highCPUUtilization",
+        "AlarmDescription": "TMSX EFTS RDS Average database CPU utilization is too high.",
+        "Namespace": "AWS/RDS",
+        "StateUpdatedTimestamp": "2024-11-10T10:10:44.453000+00:00"
+    },
+    {
+        "AlarmName": "rds-tmsx-efts-highDiskQueueDepth",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:rds-tmsx-efts-highDiskQueueDepth",
+        "AlarmDescription": "Average database disk queue depth is too high, performance may be negatively impacted.",
+        "Namespace": "AWS/RDS",
+        "StateUpdatedTimestamp": "2024-11-10T10:13:23.120000+00:00"
+    },
+    {
+        "AlarmName": "rds-tmsx-efts-lowEBSBurstBalance",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:rds-tmsx-efts-lowEBSBurstBalance",
+        "AlarmDescription": "Average database storage burst balance is too low, a negative performance impact is imminent.",
+        "Namespace": "AWS/RDS",
+        "StateUpdatedTimestamp": "2024-09-08T11:17:24.938000+00:00"
+    },
+    {
+        "AlarmName": "rds-tmsx-efts-lowFreeStorageSpace",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:rds-tmsx-efts-lowFreeStorageSpace",
+        "AlarmDescription": "Average database free storage space is too low and may fill up soon.",
+        "Namespace": "AWS/RDS",
+        "StateUpdatedTimestamp": "2024-11-10T10:13:07.342000+00:00"
+    },
+    {
+        "AlarmName": "rds-tmsx-efts-lowFreeableMemory",
+        "AlarmArn": "arn:aws:cloudwatch:eu-west-1:103883035216:alarm:rds-tmsx-efts-lowFreeableMemory",
+        "AlarmDescription": "Average database freeable memory is too low, performance may be negatively impacted.",
+        "Namespace": "AWS/RDS",
+        "StateUpdatedTimestamp": "2024-11-10T10:13:38.007000+00:00"
     }
 ]
