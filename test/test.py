@@ -8,4 +8,4 @@ data = pd.read_json(r'C:\Users\admin\Documents\GitHub\JustForTest\test\alarm.jso
 # print(data.head())  # Display the first few rows
 
 # Save to Excel file
-data.to_excel('test/alarm.xlsx', index=False)
+data.to_excel('test/alarms.xlsx', index=False)
