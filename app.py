@@ -9,8 +9,8 @@ def read_pdf(file_path):
     if not file_path.lower().endswith('.pdf'):
         raise ValueError("The file must be a PDF.")
     
-    # Limit file size (e.g., 10 MB)
-    max_file_size = 10 * 1024 * 1024  # 10 MB
+    # Limit file size to 2 MB
+    max_file_size = 2 * 1024 * 1024  # 2 MB
     file_size = os.path.getsize(file_path)
     if file_size > max_file_size:
         raise ValueError(f"The file is too large. Maximum allowed size is {max_file_size / (1024 * 1024)} MB.")
